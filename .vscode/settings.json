@@ -1,0 +1,19 @@
+{
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        ".github/": true,
+        ".bundle/": true,
+        ".sass-cache/": true,
+        "_site/**": true,
+        "vendor/**": true,
+        "Gemfile.lock": true,
+        "panthera-jekyll.gemspec": true,
+        
+        ".jekyll-cache": true
+    }
+
+}

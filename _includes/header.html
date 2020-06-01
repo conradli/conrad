@@ -1,0 +1,93 @@
+<section class="layout-header">
+
+  <div id="myNav" class="overlay">
+    <!-- The overlay -->
+    <div class="overlay-top">
+      <span onclick="closeNav()">
+        <!-- Button to close the overlay navigation -->
+  
+        <a href="javascript:void(0)" id="closeNav" class="fas fa-times inactive"></a>
+      </span>
+    </div>
+    
+    <div class="overlay-inner">
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        {% if site.menu %}
+        <ul class="layout-header-menu">
+          {% for menu in site.menu %}
+          <li data-menu-link="{{ menu.link }}">
+            <a href="{{ menu.link | relative_url }}">{{ menu.text }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <!-- open/show the overlay navigation menu -->
+  <span onclick="openNav()">
+    <i id="openNav" class="fa fa-bars active" aria-hidden="true"></i>
+
+  </span>
+
+
+  <div class="layout-header-top">
+    <div class="layout-header-avatar">
+      {% if site.github.owner_gravatar_url %}
+      <img src="{{ site.avatar | default: site.github.owner_gravatar_url }}"
+        alt="{{ site.title | default: site.github.owner_name }}">
+      {% else %}
+      <img src="https://secure.gravatar.com/avatar/?d=mm&r=g&s=150" alt="">
+      {% endif %}
+    </div>
+
+    <div class="layout-header-info">
+      <h1 class="layout-header-title">
+        {{ site.title | default: site.github.owner_name }}
+      </h1>
+      {% if site.subtitle %}
+      <h3 class="layout-header-subtitle">
+        {{ site.subtitle }}
+      </h3>
+      {% endif %}
+    </div>
+  </div>
+
+
+
+  <div class="layout-header-middle">
+    {% if site.menu %}
+    <ul class="layout-header-menu">
+      {% for menu in site.menu %}
+      <li data-menu-link="{{ menu.link }}">
+        <a href="{{ menu.link | relative_url }}">{{ menu.text }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+
+
+  <div class="layout-header-bottom">
+    <div class="layout-header-small">
+      <span>GET IN TOUCH</span>
+    </div>
+    <div class="layout-header-social">
+      {% if site.social_icons %}
+      <ul>
+        {% for social in site.social_icons %}
+        {% if social.icon %}
+        <li><a target="_blank" href="{{ social.link }}"><i class="{{ social.icon }}"></i></a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,24 @@
+# Projects
+- project: Personal website
+  role: Owner
+  duration: May 2020 &mdash; Present
+  url: "https://conradli.github.io/conradli/"
+  description: I created this website for myself to showcase my experience, personal interests, and for fun! This is created on Jekyll and hosted on Github pages. Thank you <a href="https://github.com/christianezeani">Christian Ezeani</a> and <a href="https://github.com/jglovier">Joel Glovier</a> for their open source work.
+
+- project: RideShare Revamped
+  role: Team lead
+  duration: Spring 2020
+  url: "https://conradli.github.io/RS-Improved/"
+  description: As our needfinding project for Human-Computer Interaction course, our team redesigned the front-end design of Bowdoin RideShare as the <a href="https://apps.bowdoin.edu/rideshare"/>current Bowdoin Rideshare</a> needed updating. We hoped this would reinvigorate interest for Bowdoin students to use RideShare again. We went through all the steps that a typical UX designer would follow&#58;found a need; created a wireframe; implemented our design; and conducted user studies.
+
+- project: Secure File Transfer
+  role: Member
+  duration: Fall 2019
+  url: 
+  description: As our final project in Applied Cryptography, we created a local, secure file transfer protocol which used modern day cryptography principles. We used a combination of timestamps, nonces, symmetric key algorithms (AES-GCM mode), and asymmetric key algorithms (RSA) to implement the server machine. We were able to encrypt and upload a photo/file and download the decrypted file only if the user was the owner.
+
+- project: WHACK Hackathon
+  role: Member
+  duration: November 2018
+  url: 
+  description: This was my first hackathon experience at Wellelsey College. My team won 'Best use of OneDB' category challenge. I created a working concept of a website designed to help at-risk/homeless people in the Boston area find shelters and organizations that can provide help. I designed the wireframe and researched for sources with contact information and locations of reputable organizations and shelters.

@@ -1,0 +1,28 @@
+
+
+// Styling
+$white: #fff;
+$black: #333;
+
+
+
+//Sans-serif fonts
+$font-apple-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-open-sans: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+//serif fonts
+$font-times: "Times New Roman", Times, serif;
+$font-georgia: "Georgia", serif;
+$font-palatino: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+
+$main-background-color: $white;
+$main-text-color: $black;
+$h-color: $black;                    //h1-h6 headers
+
+
+$sans-font: $font-apple-system;
+$serif-font: $font-times; 
+
+
+$main-font-family: $sans-font;

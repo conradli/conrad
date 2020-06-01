@@ -1,0 +1,47 @@
+// Clearfix
+// Clears floats via mixin (avoid using as a class).
+@mixin clearfix {
+
+    &:before,
+    &:after {
+        display: block;
+        content: "";
+        clear: both;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+
+@mixin v-center {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+  
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+  
+@mixin transition($value) {
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    transition: $value;
+}
+  
+
+@mixin sans { font-family: $sans-font;}
+@mixin sans_light { @include sans; font-weight: 300;}
+@mixin sans_regular { @include sans; font-weight: 400;}
+@mixin sans_bold { @include sans; font-weight: 700;}
+@mixin sans_extrabold { @include sans; font-weight: 800;}
+
+
+@mixin serif {font-family: $serif-font;}
+@mixin serif_light { @include serif; font-weight: 300;}
+@mixin serif_regular { @include serif;font-weight: 400;}
+@mixin serif_bold { @include serif;font-weight: 700;}
+@mixin serif_extrabold { @include serif; font-weight: 800;}

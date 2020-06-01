@@ -1,0 +1,18 @@
+---
+---
+// theme imports 
+@import './root/mixins.scss';
+@import './root/variables.scss';
+@import './root/root.scss';
+
+
+// Main theme imports
+@import './root/foundation.scss';
+@import './root/styles.scss';
+@import './root/pygment_trac.scss';
+
+// header and section imports
+@import './includes/header.scss';
+//@import './includes/section.scss';
+//@import './includes/footer.scss';
+
