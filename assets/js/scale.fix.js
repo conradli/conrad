@@ -17,7 +17,7 @@ function gestureStart() {
 }
 
 document.getElementById("openNav").addEventListener("click", function(){
-  
+  $("body").scrollTop(0);
   document.getElementById('openNav').className = "fa fa-bars inactive"; 
   
 
@@ -28,7 +28,7 @@ document.getElementById("openNav").addEventListener("click", function(){
 });
 
 document.getElementById("closeNav").addEventListener("click", function() {
-
+  $("body").scrollTop(0);
   document.getElementById('closeNav').className = "fas fa-times inactive";
 
 
