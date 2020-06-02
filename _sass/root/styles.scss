@@ -313,7 +313,8 @@ a {
     margin-bottom: 44px;
     padding: 30px 15px 44px;
     overflow-x: hidden!important;
-    max-width: 100vh !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
 
     h1 { font-size: 1.75rem; }
     h2 { font-size: 1.5rem; }
