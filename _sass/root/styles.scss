@@ -316,8 +316,7 @@ a {
   body {
     width: 100vw;
     height: 100vh;
-    padding: 30px 15px 30px;
-    margin-bottom: 60px
+    padding: 30px 15px 44px;
     h1 { font-size: 1.75rem; }
     h2 { font-size: 1.5rem; }
     h3 { font-size: 1rem; }
@@ -391,6 +390,9 @@ a {
     margin-bottom: 5px;
   }
 
+  .layout-footer {
+    padding-bottom: 100px;
+  }
   .footer {
     border-top: 1px solid #e5e5e5;
   }
