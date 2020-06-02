@@ -40,10 +40,13 @@ document.getElementById("closeNav").addEventListener("click", function() {
 });
 
 function openNav() {
+  document.getElementsByClassName("layout-content")[0].style.borderTop = "0px";
   document.getElementById("myNav").style.width = "100%";
 }
 
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
+  document.getElementsByClassName("layout-content")[0].style.borderTop = "1px solid #e5e5e5";
+
 }
 

@@ -39,12 +39,12 @@
     display: grid;
     height: 100%;
     width: 0;
-    grid-template-rows: 11% 88%;
+    grid-template-rows: 84px 100%;
     z-index: 1;
     right: 0;
     bottom: 0;
     overflow-x: hidden;
-    transition: .15s;
+    transition: 10s;
 
     &-top {
         background-color: rgba(255, 255, 255, 0);
