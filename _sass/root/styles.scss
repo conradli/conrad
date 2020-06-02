@@ -310,8 +310,9 @@ a {
   }
 
   body {
-    margin: 0px; 
-    padding: 30px 15px 10px;
+    padding: 30px 15px 44px;
+    overflow-x: hidden!important;
+    max-width: 100% !important;
 
     h1 { font-size: 1.75rem; }
     h2 { font-size: 1.5rem; }
@@ -390,7 +391,7 @@ a {
     margin-bottom: 40px;
 
   }
-  
+
   .footer {
     border-top: 1px solid #e5e5e5;
     vertical-align: top;
