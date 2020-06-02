@@ -310,10 +310,9 @@ a {
   }
 
   body {
-    margin-bottom: 44px;
-    padding: 30px 15px 44px;
     width: 100vw;
     height: 100vh;
+    padding: 30px 15px 44px;
     h1 { font-size: 1.75rem; }
     h2 { font-size: 1.5rem; }
     h3 { font-size: 1rem; }
@@ -388,13 +387,14 @@ a {
   }
 
   .layout-footer {
-    margin-bottom: 40px;
+    height: 50px;
+    bottom: 0;
+    position: relative;
 
   }
 
   .footer {
     border-top: 1px solid #e5e5e5;
-    vertical-align: top;
   }
 }
 
