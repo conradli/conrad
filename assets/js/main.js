@@ -16,14 +16,25 @@ function gestureStart() {
   }
 }
 
+
+/*
+for (var i = 0; i < document.links.length; i++) {
+  if (document.links[i].href == document.URL.href) {
+      document.links[i].className = 'active';
+  }
+  
+}
+*/
+
 document.getElementById("openNav").addEventListener("click", function(){
   $("body").scrollTop(0);
   document.getElementById('openNav').className = "fa fa-bars inactive"; 
   
 
-  document.getElementById('closeNav').className = "fas fa-times active";
 
   openNav();
+  document.getElementById('closeNav').className = "fas fa-times active";
+
 
 });
 
@@ -40,13 +51,14 @@ document.getElementById("closeNav").addEventListener("click", function() {
 });
 
 function openNav() {
-  document.getElementsByClassName("layout-content")[0].style.borderTop = "0px";
+  //document.getElementsByClassName("layout-content")[0].style.borderTop = "1px solid #fff";
   document.getElementById("myNav").style.width = "100%";
 }
 
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
-  document.getElementsByClassName("layout-content")[0].style.borderTop = "1px solid #e5e5e5";
+
+  //document.getElementsByClassName("layout-content")[0].style.borderTop = "1px solid #e5e5e5";
 
 }
 

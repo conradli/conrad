@@ -1,5 +1,5 @@
 
-title: Conrad 1.3
+title: Conrad Li
 subtitle: Bowdoin CS Student
 description: 
 favicon: 
@@ -38,11 +38,11 @@ menu:
     link: /photography
     icon: ""
 
-  - text: My Resume
+  - text: Resume
     link: /resume
     icon: ""
 
-  - text: Contact Me
+  - text: Contact
     link: /contact
     icon: ""
   

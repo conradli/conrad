@@ -1,4 +1,4 @@
-<section class="layout-header">
+<section>
 
   <div id="myNav" class="overlay">
     <!-- The overlay -->
@@ -30,7 +30,7 @@
   </div>
 
   <!-- open/show the overlay navigation menu -->
-  <span onclick="openNav()">
+  <span class="toggle-menu" onclick="openNav()">
     <i id="openNav" class="fa fa-bars active" aria-hidden="true"></i>
 
   </span>
@@ -61,8 +61,11 @@
 
 
   <div class="layout-header-middle">
+    <h1 class="layout-header-title-medium">
+      {{ site.title | default: site.github.owner_name }}
+    </h1>
     {% if site.menu %}
-    <ul class="layout-header-menu">
+    <ul class="layout-header-menu" id="menu">
       {% for menu in site.menu %}
       <li data-menu-link="{{ menu.link }}">
         <a href="{{ menu.link | relative_url }}">{{ menu.text }}</a>
