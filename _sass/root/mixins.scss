@@ -45,3 +45,15 @@
 @mixin serif_regular { @include serif;font-weight: 400;}
 @mixin serif_bold { @include serif;font-weight: 700;}
 @mixin serif_extrabold { @include serif; font-weight: 800;}
+
+@mixin section_border {
+    border-top: 4px solid #c7c7c7;
+    border-bottom: 2px solid #c7c7c7;
+    padding: .2rem 0 .4rem;
+}
+
+@mixin section_border_thin {
+border-top: 1px solid #c7c7c7;
+border-bottom: 1px solid #c7c7c7;
+padding: .2rem 0 .2rem;
+}

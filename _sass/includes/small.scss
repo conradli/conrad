@@ -170,6 +170,7 @@
             font-size: 1.5rem;
             display: block;
             transition: 0.3s;
+            font-weight: 400;
         }
 
         a:hover, a:focus {
@@ -177,6 +178,7 @@
         }
     }
   }
+
 
   .layout-content {
     border-top:1px solid #e5e5e5;
@@ -187,12 +189,7 @@
 
   }
 
-  
-  .layout-content {
-    padding: 0;
-    margin-bottom: 4em;
-    }
-  
+
   
   .layout-footer {
   border-top: 1px solid #e5e5e5;

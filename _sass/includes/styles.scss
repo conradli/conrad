@@ -192,6 +192,7 @@ a {
         padding: 10px 10px 10px 40px;
         color: $main-text-color !important;
         text-decoration: none !important;
+        font-weight: 500;
       }
     }
   }
@@ -235,7 +236,7 @@ a {
 
 .layout-content {
   width: $section-width; //500 orig
-  min-height: 500px;
+  min-height: 700px;
   float: right;
   padding-bottom: 20px;
   overflow-x: hidden;

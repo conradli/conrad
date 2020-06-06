@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: resume
 ---
 
 # This is the resume.

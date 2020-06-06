@@ -1,18 +1,19 @@
 ---
 ---
-// theme imports 
+// Main theme imports 
 @import './root/variables.scss';
-@import './root/mixins.scss';
 @import './root/normalize.scss';
 
-// Main theme imports
-@import './root/styles.scss';
+@import './root/mixins.scss';
 @import './root/pygment_trac.scss';
 
 
-// header and section imports
-@import './includes/small.scss';
+// Media queries 
+@import './includes/styles.scss';
 @import './includes/medium.scss';
-//@import './includes/section.scss';
-//@import './includes/footer.scss';
+@import './includes/small.scss';
 
+
+// resume imports
+@import './resume/layout.scss';
+@import './resume/resume.scss';

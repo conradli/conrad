@@ -1,32 +1,32 @@
 # Jobs
 - company: Rochester Institute of Technology (RIT)
   position: NSF REU Software Engineer Research Fellow
-  location: Rochester, NY
-  duration: June 2020 &mdash; August 2019
+  location: 
+  duration: June 2019 &mdash; August 2019
   summary: <ul class="resume-item-list"><li>Created a web application tool to detect objects in images using OpenCV library. This tool will be embedded into a system that will recommend whether an individual should share a group photo based on each individual’s preferences.</li><li>Implemented the web application using MVC application structure with the Spring Boot Maven framework on Eclipse.</li><li>Researched different object detection techniques and incorporated YOLOv3 using the COCO dataset into the web application.</li><li>Developed an understanding of software engineering research related to multi-user privacy, machine learning, recommender systems, and command line among various other applications.</li><li>Managed project via weekly progress updates articulating achievements, challenges faced, and upcoming week’s goals to mentors.</li></ul>
 
 - company: Bowdoin College
   position: Teaching Assistant for the CS department
-  location: Brunswick, ME
+  location: 
   duration: Spring 2020 &mdash; Present
   summary: <ul class="resume-item-list"><li>Graded CSCI2200 (Algorithms) problem sets in a timely manner</li><li>Provided detailed feedback to questions on problem sets where necessary.</li></ul>
 
 - company: Bowdoin College
   position: Alumni Fund Ambassador
-  location: Brunswick, ME
+  location: 
   duration: Spring 2019 &mdash; Present
   summary: <ul class="resume-item-list"><li>Contact Bowdoin alumni to thank donors, engage in conversations, and solicit donations in support of the College’s annual operations.</li><li>Refine professional interpersonal skills, philanthropic development and fundraising skills.</li><li>Build rapport with alumni while maintaining a level of strict confidentiality.</li></ul>
 
 
 - company: Sing Wah Kitchen
   position: Assistant Manager
-  location: New Haven, CT
+  location: 
   duration: 2014 &mdash; 2018
   summary: <ul class="resume-item-list"><li>Developed interpersonal skills through greeting and conversing with customers, taking orders, offering recommendations, and prioritizing customer satisfaction in my interactions.</li><li>Carried out tasks which included handling cash register, acting as customer service liaison, restocking inventory, operating deep fryer, packaging orders, cleaning at the end of the night, and delivering food.</li><ul>
 
 
 - company: Beecher Road Elementary School
   position: Summer Enrichment Program Counselor
-  location: Woodbridge, CT
-  duration: Summer 2015 &mdash; Summer 2018
+  location: 
+  duration: Summers 2015 &mdash; 2018
   summary: <ul class="resume-item-list"><li>Collaborated with teachers and staff members to teach campers between ages 4 and 12 recreational activities and social skills.</li><li>Organized activities for groups varying in size from 5 to 30 campers to enrich summer experience and promote collaboration.</li><ul>
