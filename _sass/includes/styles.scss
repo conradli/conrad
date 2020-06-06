@@ -180,6 +180,7 @@ a {
       &:hover {
         background-color: rgb(224,224,224);
         border-radius: .3em;
+        text-decoration: underline;
         
       }
 
@@ -235,6 +236,7 @@ a {
 
 
 .layout-content {
+  margin-top: .75em;
   width: $section-width; //500 orig
   min-height: 700px;
   float: right;

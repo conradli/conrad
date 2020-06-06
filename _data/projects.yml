@@ -3,7 +3,7 @@
   role: Creator & Designer
   duration: May 2020 &mdash; Present
   url: "https://conradli.github.io/conradli/"
-  description: I created this website for myself to showcase my experience, personal interests, and for fun! This is created on Jekyll and hosted on Github pages. Thank you <a href="https://github.com/christianezeani">Christian Ezeani</a> and <a href="https://github.com/jglovier">Joel Glovier</a> for their open source work.
+  description: I created this website for myself to showcase my experience, personal interests, and just for fun! I created and designed this website but I obtained inspiration from <a href="https://github.com/orderedlist">Steve Smith</a> for the layout; <a href="https://github.com/christianezeani">Christian Ezeani</a> for the sidebar; and <a href="https://github.com/jglovier">Joel Glovier</a> for the resume design. This would not be possible without their open source work. This is created on Jekyll and hosted on Github pages.
 
 - project: RideShare Revamped
   role: Team lead

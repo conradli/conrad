@@ -40,7 +40,7 @@
           <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
           {% endif %}
 
-          <a href="{{ '/assets/files/resume.pdf' | relative_url }}" class="icon-links-bar">
+          <a href="{{ '/assets/resume.pdf' | relative_url }}" class="icon-links-bar">
             <p class="download-resume">Download</p>
             <i class="fas fa-download"></i>
 
@@ -291,12 +291,10 @@
       {% endif %}
 
     </section>
-    <!--
-  {% include footer.html %}
-  -->
+
+    <section class="layout-footer"> 
+      {% include footer.html %}
     </section>
-    </section>
-    {% include resume/head.html %}
   </div>
 
  <!-- Scripts go below here -->
