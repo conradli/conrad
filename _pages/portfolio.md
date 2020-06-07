@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: portfolio
 ---
 
 # This is the portfolio page.

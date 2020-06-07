@@ -174,27 +174,28 @@ a {
     margin-top: 10px;
     margin-bottom: 10px;
 
-    >li {
+    li {
       display: block;
 
       &:hover {
         background-color: rgb(224,224,224);
-        border-radius: .3em;
+        border-radius: .5em;
         text-decoration: underline;
         
       }
 
-      .active {
-        background-color: rgba(255, 0, 0, 0.555) !important;
-      }
-
-      >a {
+      a {
         display: block;
         padding: 10px 10px 10px 40px;
         color: $main-text-color !important;
         text-decoration: none !important;
         font-weight: 500;
       }
+    }
+    .active {
+      background-color: $header-secondary-color; //rgba(255, 0, 0, 0.555) !important;
+      border-radius: .5em;
+      text-decoration: underline;
     }
   }
 

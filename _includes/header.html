@@ -65,11 +65,18 @@
       {{ site.title | default: site.github.owner_name }}
     </h1>
     {% if site.menu %}
-    <ul class="layout-header-menu" id="menu">
+    <ul class="layout-header-menu">
       {% for menu in site.menu %}
-      <li data-menu-link="{{ menu.link }}">
+      {% if menu.link == page.url %}
+        <li data-menu-link="{{ menu.link }}" class="active" >
+          <a href="{{ menu.link | relative_url }}">{{ menu.text }}</a>
+        </li>
+      
+      {% else %}
+      <li data-menu-link="{{ menu.link }}" >
         <a href="{{ menu.link | relative_url }}">{{ menu.text }}</a>
       </li>
+      {% endif %}
       {% endfor %}
     </ul>
     {% endif %}

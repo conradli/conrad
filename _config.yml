@@ -31,19 +31,19 @@ menu:
     icon: ""
     
   - text: Portfolio
-    link: /portfolio
+    link: /portfolio/
     icon: ""
   
   - text: Photography
-    link: /photography
+    link: /photography/
     icon: ""
 
   - text: Resume
-    link: /resume
+    link: /resume/
     icon: ""
 
   - text: Contact
-    link: /contact
+    link: /contact/
     icon: ""
   
 

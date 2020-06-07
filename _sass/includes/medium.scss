@@ -18,9 +18,8 @@
     height: 6em;
     margin: 0;
     padding: .75em .25em .75em .75em;
-    background-color: $header-primary-color; //add
-    box-shadow: .3rem .3rem 0 $inner-box-shadow, .7rem .7rem 0 $header-secondary-color; //add
-    margin-bottom: 1rem; //add
+    box-shadow: .3rem .3rem 0 $inner-box-shadow, .7rem .7rem 0 $header-secondary-color; 
+    margin-bottom: 1rem; 
 
     &-top,
     &-bottom {

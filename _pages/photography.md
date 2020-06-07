@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: photography
 ---
 
 # This is the photography page. 
