@@ -1,8 +1,17 @@
+<section class="about">
+
+  <p>
+    {{ site.about }}
+  </p>
+
+</section>
+
+
 <section class="blog">
     <h1>Latest Posts</h1>
   
     <ul>
-      {% for post in site.posts %}
+      {% for post in site.posts limit:3 %}
         <li class="blog-entry">
          
           <a href="{{ post.url }}">
@@ -22,6 +31,12 @@
       {% endfor %}
     </ul>
   
+    <a href="{{ '/blog/' | relative_url }}">
+      <button class="see-all-blog" > 
+        <h3>See More Posts</h3>
+  
+      </button>
+    </a>
   
 </section>
   

@@ -155,7 +155,7 @@ a {
   }
 
   &-title {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
@@ -177,8 +177,8 @@ a {
     li {
       display: block;
 
-      &:hover {
-        background-color: rgb(224,224,224);
+      &:not(.active):hover {
+        background-color: $button-color;
         border-radius: .5em;
         text-decoration: underline;
         
@@ -192,8 +192,9 @@ a {
         font-weight: 500;
       }
     }
+    
     .active {
-      background-color: $header-secondary-color; //rgba(255, 0, 0, 0.555) !important;
+      background-color: $header-secondary-color;
       border-radius: .5em;
       text-decoration: underline;
     }
@@ -245,8 +246,13 @@ a {
   overflow-x: hidden;
   border: none;
   p, li, a {
-    line-height: 1.6em;
+    line-height: 1.8rem;
+    margin: 0.5rem 0rem;
   }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 1rem 0 0.5rem;
+  }
+
 }
 
 

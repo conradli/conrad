@@ -27,7 +27,7 @@
     }
 
     &-middle {
-      padding: 10px 0px;
+      padding: .5em 0px;
       height: 4rem;
       border: none;
       margin: 0px;
@@ -54,8 +54,8 @@
       display: block;
       width: max-content;
       float: left;
-      padding: .75rem;
-      margin: .75rem;
+      padding: .35em .25em .5em 0em;
+
     }
 
     &-menu {
@@ -79,10 +79,10 @@
       }
 
       a {
-        font-size: 1.25rem;
+        font-size: 1.1em;
         font-weight: 500;
         color: $main-text-color !important;
-        padding: .75rem .75rem .75rem .75rem !important;
+        padding: .75rem!important;
 
       }
 

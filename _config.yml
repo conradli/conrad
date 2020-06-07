@@ -4,6 +4,7 @@ subtitle: Bowdoin CS Student
 description: 
 favicon: 
 
+about: "I am senior majoring in Computer Science and minoring in Economics at Bowdoin College. For summer 2020, I will be interning as a Global Technology Analyst at Bank of America. I am interested in finding ways to incorporate technology into people's lives to bring about social good. You can reach me at zhikangli@hotmail.com, I'd love to chat!"
 
 defaults:
   -
@@ -28,6 +29,10 @@ collections:
 menu:
   - text: Home
     link: /
+    icon: ""
+
+  - text: Blog
+    link: /blog/
     icon: ""
     
   - text: Portfolio
@@ -90,7 +95,7 @@ resume_contact_address:         "638 Smith Union, Brunswick, ME 04011"
 resume_header_contact_info:     "638 Smith Union, Brunswick, ME 04011 • zhikangli@hotmail.com"
 display_header_contact_info:    "false"
 
-resume_header_intro: "<p>Hello! I am a passionate and driven senior majoring in Computer Science and minoring in Economics. For summer 2020, I will be interning as a Global Technology Analyst at Bank of America. I am interested in finding ways to incorporate technology into people's lives to bring about social good.</p>"
+
 
 
 

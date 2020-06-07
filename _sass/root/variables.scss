@@ -2,13 +2,13 @@
 // Container width
 $wrapper-width: 968px;
 $header-width: 270px;
-$header-height: 600px; //top + middle + bottom
+$header-height: 650px; //top + middle + bottom
 $section-width: 640px;
 
 
 
 $layout-header-top-height: 260px;
-$layout-header-middle-height: 242px; //286px;
+$layout-header-middle-height: 286px; //286px;
 $layout-header-bottom-height: 50px;
 
 
@@ -41,6 +41,7 @@ $main-text-color: $black;
 $main-border-color: rgba(0,0,0,0.5);
 $header-primary-color: #f9f9f9;
 $header-secondary-color: #A8D0E6;
+$button-color:  rgb(224,224,224);
 $inner-box-shadow: black;
 $layout-header-middle-border: 1px solid $main-text-color;
 
