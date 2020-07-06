@@ -1,15 +1,17 @@
 .wrapper {
   width: $wrapper-width; //860 originally
-  margin: 1.5rem auto auto auto;
-
+  margin-top: 1.5rem;
+  margin-left: 22.5rem;
+  margin-right: auto;
+  margin-bottom: auto;
 }
 
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 
 }
 
