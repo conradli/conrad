@@ -8,7 +8,8 @@
 
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" media="all" type="text/css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" media="screen"
+    type="text/css">
 
   {% seo %}
 
@@ -22,19 +23,41 @@
       {% include header.html %}
 
     </div>
-    
+
 
     <div class="layout-content">
-      {% include section.html %}
-      {{ content }} 
 
-      {% include blog.html %}
+      <section class="blog">
+        <h1 class="latest-post-header">Latest Posts</h1>
+        {% for post in site.posts %}
+        <ul>
 
+          <li class="blog-entry">
+            <a href="{{ post.url }}">
+
+              <div class="blog-header" href="{{ post.url }}">
+                <h2>{{ post.title }}</h2>
+                <time datetime="{{ post.date | date: "%m-%d-%Y" }}">{{ post.date | date_to_long_string }}</time>
+              </div>
+
+              <div class="excerpt">
+                {{ post.excerpt | strip_html | strip_newlines | truncate: 156 }}
+
+              </div>
+            </a>
+
+          </li>
+
+        </ul>
+
+        {% endfor %}
+
+      </section>
     </div>
 
-    <section class="layout-footer"> 
+    <div class="layout-footer">
       {% include footer.html %}
-    </section>
+    </div>
   </div>
 
 

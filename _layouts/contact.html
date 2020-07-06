@@ -15,23 +15,23 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="layout-header">
 
-      {% include header.html %}
+    <div class="wrapper">
+      <div class="layout-header">
 
+        {% include header.html %}
+
+      </div>
+      
+
+      <div class="layout-content">
+        {{ content }} 
+      </div>
+
+      <div class="layout-footer"> 
+        {% include footer.html %}
+      </div>
     </div>
-    
-
-    <div class="layout-content">
-      {% include section.html %}
-      {{ content }} 
-    </div>
-
-    <section class="layout-footer"> 
-      {% include footer.html %}
-    </section>
-  </div>
 
 
   <!-- Scripts go below here -->

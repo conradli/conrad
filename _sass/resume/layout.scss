@@ -5,7 +5,6 @@
 
 // Fixed-width, centered column for site content.
 .container {
-    width: $section-width;
     margin-right: auto;
     margin-left: auto;
     @include clearfix;

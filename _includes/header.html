@@ -5,11 +5,11 @@
     <div class="overlay-top">
       <span onclick="closeNav()">
         <!-- Button to close the overlay navigation -->
-  
+
         <a href="javascript:void(0)" id="closeNav" class="fas fa-times inactive"></a>
       </span>
     </div>
-    
+
     <div class="overlay-inner">
       <!-- Overlay content -->
       <div class="overlay-content">
@@ -64,22 +64,23 @@
     <h1 class="layout-header-title-medium">
       {{ site.title | default: site.github.owner_name }}
     </h1>
-    {% if site.menu %}
     <ul class="layout-header-menu">
       {% for menu in site.menu %}
-      {% if menu.link == page.url %}
-        <li data-menu-link="{{ menu.link }}" class="active" >
-          <a href="{{ menu.link | relative_url }}">{{ menu.text }}</a>
-        </li>
-      
+      {% if menu.link == page.url%}
+      <li data-menu-link="{{ menu.link }}" class="active">
+        <a href="{{ menu.link | relative_url }}">{{ menu.text }}</a>
+      </li>
+
       {% else %}
-      <li data-menu-link="{{ menu.link }}" >
+
+      <li data-menu-link="{{ menu.link }}">
         <a href="{{ menu.link | relative_url }}">{{ menu.text }}</a>
       </li>
       {% endif %}
       {% endfor %}
     </ul>
-    {% endif %}
+
+
   </div>
 
 
