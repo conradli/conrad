@@ -16,7 +16,7 @@ group :jekyll_plugins do
   gem "jekyll-remote-theme"
   gem "jekyll-seo-tag"
   gem "sprockets", "~> 3.7"
-  gem 'jekyll-watch'
+  gem "jekyll-watch"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
