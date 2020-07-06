@@ -1,0 +1,10 @@
+<section class="post">
+
+
+    <h1 class="post-title"> {{ page.title }} </h1>
+    <time class="post-date" datetime="{{ post.date | date: "%m-%d-%Y" }}">{{ page.date | date_to_long_string }}</time>
+
+    {{ content }}
+
+
+</section>
