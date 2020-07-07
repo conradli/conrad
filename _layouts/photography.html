@@ -30,7 +30,7 @@
       <div class="photo-grid">
         {% for photo in photography %}
 
-        <a href="{{ photo.url }}">
+        <a href="{{ site.baseurl }}/{{ photo.url }}">
 
           <div class="photo-item">
             <img class="photo-display" src="{{photo.display}}">
