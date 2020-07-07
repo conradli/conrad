@@ -30,10 +30,10 @@
       <div class="photo-grid">
         {% for photo in photography %}
 
-        <a href="{{ site.url }}/{{ photo.url }}">
+        <a href="{{ site.url }}{{ photo.url }}">
 
           <div class="photo-item">
-            <img class="photo-display" src="{{ site.url }}/{{ photo.display }}">
+            <img class="photo-display" src="{{ site.url }}{{ photo.display }}">
             <h2 class="photo-title">{{photo.title}}, {{photo.country}}</h2>
             <time class="photo-date">{{ photo.date | date: "%m-%d-%Y" }}</time>
           </div>
