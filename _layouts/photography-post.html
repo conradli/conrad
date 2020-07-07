@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" media="all" type="text/css">
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" media="all"
+        type="text/css">
+    {% seo %}
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="layout-header">
+
+            {% include header.html %}
+
+        </div>
+
+
+        <div class="layout-content" >
+            <h1> {{page.title }}, {{page.country}} </h1>
+
+            {{ content }}
+
+            {% if page.carousel %}
+            <ul class="image-gallery">
+                {% for file in page.carousel %}
+                {% assign filenameparts = file.image | split: "/" %}
+                {% assign filename = filenameparts | last | replace: file.extname,"" %}
+                <li>
+                    <a href="{{file.image | relative_url}}">
+                        <img src="{{ file.image | relative_url }}">
+                        <span>{{file.caption}}</span>
+                    </a>
+
+                </li>
+
+
+                {% endfor %}
+            </ul>
+            {% endif %}
+
+
+        </div>
+
+        
+
+        <div class="layout-footer">
+            {% include footer.html %}
+        </div>
+    </div>
+
+
+    <!-- Scripts go below here -->
+    <script type="text/javascript" src="{{ '/assets/js/main.js' | relative_url }} "></script>
+    <script type="text/javascript" src="{{ 'assets/js/lightbox.js' | relative_url }}"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</body>
+
+</html>

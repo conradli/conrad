@@ -25,11 +25,24 @@
 
 
     <div class="layout-content">
-      {% for item in site.photography %}
-      <h2>{{ item.title }}</h2>
-      <p>{{ item.description }}</p>
-      <p><a href="{{ item.url }}">{{ item.title }}</a></p>
-      {% endfor %}
+      {% assign photography = site.photography | sort: 'title' %}
+
+      <div class="photo-grid">
+        {% for photo in photography %}
+
+        <a href="{{ photo.url }}">
+
+          <div class="photo-item">
+            <img class="photo-display" src="{{photo.display}}">
+            <h2 class="photo-title">{{photo.title}}, {{photo.country}}</h2>
+            <time class="photo-date">{{ photo.date | date: "%m-%d-%Y" }}</time>
+          </div>
+        </a>
+
+        {% endfor %}
+
+      </div>
+
     </div>
 
     <div class="layout-footer">

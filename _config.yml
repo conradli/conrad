@@ -27,6 +27,8 @@ collections:
 
   photography:
     output: true
+    permalink: /photography/:title/
+    category: /photography/
 
 
 # Side Menu Links

@@ -1,7 +1,7 @@
 .wrapper {
   width: $wrapper-width; //860 originally
   margin-top: 1.5rem;
-  margin-left: 22.5rem;
+  margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
 }
@@ -30,6 +30,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+
 }
 
 
@@ -242,7 +243,7 @@ a {
 .layout-content {
   margin-top: .75em;
   width: $section-width; //500 orig
-  min-height: 700px;
+  min-height: $section-height;
   float: right;
   padding-bottom: 20px;
   overflow-x: hidden;
