@@ -35,7 +35,8 @@
   }
 
   .layout-header {
-  position: static;
+  position: relative;
+  top: 0;
   width: 100%;
   height: 5em;
   background-color: $header-primary-color; //add
@@ -80,9 +81,9 @@
 
 
   .fa.fa-bars.active {
-    position: static;
+    position: absolute;
     display: block;
-    float: right;
+    right: 1rem;
     font-size: 28px;
     text-align: bottom;
     transform: translate(-30%,45%); //add 
@@ -98,7 +99,6 @@
 
   .fas.fa-times.active {
     position: absolute;
-    right: -2px;
     display: block;
     visibility: visible;
     float: right;
