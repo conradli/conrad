@@ -260,7 +260,7 @@ a {
 
 
 .layout-footer {
-  position: static;
+  position: -webkit-sticky;
   margin: auto;
   clear: both;
   float: right;
