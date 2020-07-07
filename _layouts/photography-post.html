@@ -38,8 +38,8 @@
                 {% assign filenameparts = file.image | split: "/" %}
                 {% assign filename = filenameparts | last | replace: file.extname,"" %}
                 <li>
-                    <a href="{{ 'file.image' | relative_url}}">
-                        <img src="{{ 'file.image' | relative_url }}">
+                    <a href="{{ site.github.url | append: file.image }}">
+                        <img src="{{ site.github.url | append: file.image }}">
                         <span>{{file.caption}}</span>
                     </a>
 
