@@ -1,6 +1,6 @@
 @media print, screen and (max-width: 767px) and (min-width: 100px) {
   div.wrapper {
-    margin: 0 auto 75px auto;
+    margin: auto;
     width: auto;
     padding: 30px 20px !important;
 
@@ -194,6 +194,7 @@
   .layout-footer {
   border-top: 1px solid #e5e5e5;
   width: 100%;
+  padding-bottom: 5rem;
 
     &-social {
       display: block;
