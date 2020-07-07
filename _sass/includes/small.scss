@@ -1,6 +1,6 @@
 @media print, screen and (max-width: 767px) and (min-width: 100px) {
   div.wrapper {
-    margin: 0 auto;
+    margin: 0 auto 75px auto;
     width: auto;
     padding: 30px 20px !important;
 
@@ -29,7 +29,7 @@
 
   .overlay .closebtn {
 
-  position: relative;
+  position: static;
   float: right;
   height: 36px;
   width: 36px;
@@ -147,7 +147,7 @@
 
   /* Position the content inside the overlay */
   .overlay-content {
-    position: relative;
+    position: static;
     display: block;
     top: 0%;
     width: 100%;
@@ -194,7 +194,6 @@
   .layout-footer {
   border-top: 1px solid #e5e5e5;
   width: 100%;
-  margin-bottom: 64px;
 
     &-social {
       display: block;
