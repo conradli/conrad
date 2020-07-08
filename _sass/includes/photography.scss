@@ -48,9 +48,12 @@ a, a:link, a:hover {
 .photo-date {
     color: black;
     text-align: right;
+    font-style: italic;
     padding-right: 5%;
+    
 
 }
+
 
 @media print, screen and (max-width: 767px) and (min-width: 100px) {
     .photo-grid {
