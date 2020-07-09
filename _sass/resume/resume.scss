@@ -1,5 +1,5 @@
 
-.section-header {
+.resume-section-header {
   @include section_border;
   margin-bottom: 1rem;
 
@@ -13,7 +13,7 @@
 }
 
 
-.page-header {
+.resume-header {
   padding: 1.5rem 0 0 0;
 
   .header-name {
@@ -156,25 +156,6 @@
 }
 
 
-// footer styles
-
-.page-footer {
-  border-top: 4px solid #c7c7c7;
-  padding-top: 1.5rem;
-  text-align: center;
-  margin-bottom: 3rem;
-
-  .footer-line {
-    margin: 0;
-    font-size: .875rem;
-    color: #999;
-
-    >a {
-      font-weight: 700;
-      color: #333;
-    }
-  }
-}
 
 .print-only {
   display: none !important

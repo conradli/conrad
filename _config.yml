@@ -29,6 +29,11 @@ collections:
     output: true
     permalink: /photography/:title/
     category: /photography/
+  
+  portfolio:
+    output: true
+    permalink: /portfolio/:title/
+    category: /portfolio/
 
 
 # Side Menu Links

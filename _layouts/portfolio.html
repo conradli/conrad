@@ -24,7 +24,25 @@
     
 
     <div class="layout-content">
-      {{ content }} 
+      <h1 class="page-header">Portfolio</h1>
+
+      {% assign portfolio = site.portfolio | sort: 'date' %}
+
+      <div class="portfolio-grid">
+        {% for proj in portfolio %}
+        <a href="{{ site.url}}{{ proj.url }}">
+          <div class="project-item">
+            <img class="project-display" src="{{ site.baseurl }}{{ proj.display }}">
+            <h2 class="project-title">{{proj.title}}</h2>
+            <!-- <time class="project-date">{{ proj.date | date: "%m-%d-%Y" }}</time> -->
+          </div>
+        </a>
+
+        {% endfor %}
+
+      </div>
+
+
     </div>
 
     <div class="layout-footer"> 

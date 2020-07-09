@@ -39,16 +39,16 @@ body {
   background-color: $main-background-color;
   font: 16px/1.5 $main-font-family;
   color: $main-text-color;
-  margin-bottom: 100px; //if footer disappears
+  -webkit-overflow-scrolling: touch;
 }
 
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 2rem; //1.8rem;
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.5rem; //1.4rem;
 }
 
 h3 {
@@ -96,8 +96,8 @@ a {
   width: $header-width;
   height: $header-height;
   -webkit-font-smoothing: subpixel-antialiased;
-  background-color: $header-primary-color; //add
-  box-shadow: .27em .27em $inner-box-shadow, .65em .65em 0 $header-secondary-color; //add
+  background-color: $header-primary-color;
+  box-shadow: .27em .27em $inner-box-shadow, .65em .65em 0 $header-secondary-color; 
   padding: 1em;
 
 
@@ -256,7 +256,16 @@ a {
     margin: 1rem 0 0.5rem;
   }
 
+  .page-header {
+    border-bottom: $layout-header-middle-border;
+    h1 {
+        margin-bottom: 0em;
+
+    }
+  }
+
 }
+
 
 
 .layout-footer {
