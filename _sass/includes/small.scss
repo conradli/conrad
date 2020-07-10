@@ -28,7 +28,7 @@
   .overlay a {font-size: 20px}
 
   .overlay .closebtn {
-  position: static;
+  position: relative;
   float: right;
   height: 36px;
   width: 36px;
@@ -79,44 +79,6 @@
   }
 
 
-  .fa.fa-bars.active {
-    position: static;
-    display: block;
-    float: right;
-    font-size: 28px;
-    text-align: bottom;
-    transform: translate(-30%,45%); //add 
-    transition: 0s;
-  }
-
-  .fa.fa.fa-bars.inactive {
-    display: none;
-    visibility: hidden;
-
-
-  }
-
-  .fas.fa-times.active {
-    position: static;
-    display: block;
-    visibility: visible;
-    float: right;
-    font-size: 32px;
-    text-align: bottom;
-    transform: translate(-200%, 175%);
-    color: black;
-    transition-timing-function: step-start;
-
-
-  }
-
-  .fas.fa-times.inactive {
-    display: none;
-    visibility: hidden;
-
-  }
-
-
 
   /* The Overlay (background) */
   .overlay {
@@ -131,6 +93,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
     transition: .15s;
+    
 
     &-top {
         background-color: rgba(255, 255, 255, 0);
@@ -177,6 +140,44 @@
         }
     }
   }
+
+  .fa.fa-bars.active {
+    position: static;
+    display: block;
+    float: right;
+    font-size: 28px;
+    text-align: bottom;
+    transform: translate(-30%,45%); 
+    transition: none !important;
+  }
+
+  .fa.fa.fa-bars.inactive {
+    display: none;
+    visibility: hidden;
+
+
+  }
+
+  .fas.fa-times.active {
+    position: static;
+    display: block;
+    float: right;
+    font-size: 32px;
+    text-align: bottom;
+    transform: translate(-200%, 175%);
+    color: black;
+    transition-timing-function: step-start;
+    transition: none !important;
+
+
+  }
+
+  .fas.fa-times.inactive {
+    display: none;
+
+  }
+
+
 
 
   .layout-content {
