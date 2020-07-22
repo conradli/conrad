@@ -17,7 +17,7 @@
     width: 100%;
     height: 6em;
     margin: 0;
-    padding: .75em .25em .75em .75em;
+    padding: .5rem .25rem .5rem .75rem;
     box-shadow: .3rem .3rem 0 $inner-box-shadow, .7rem .7rem 0 $header-secondary-color; 
     margin-bottom: 1rem; 
 
@@ -54,7 +54,7 @@
       display: block;
       width: max-content;
       float: left;
-      padding: .35em .25em .5em 0em;
+      padding: .35rem 0 .5rem 0em;
 
     }
 
@@ -69,14 +69,16 @@
       
       li {
         padding: 0px !important;
-        border-right: 1px solid rgba(0, 0, 0, .75);
+        //border-right: 1px solid rgba(0, 0, 0, .75);
         height: auto;
       }
 
+      /*
       li:last-child {
         border-right: none;
         
       }
+      */
 
       a {
         font-size: 1.1em;

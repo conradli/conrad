@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: portfolio-post
 
 title: Kiwi-fruit
 category: blog

@@ -1,0 +1,90 @@
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: .75rem;
+    row-gap: 1.5rem;
+    padding: 0rem;
+    a, a:link, a:hover {
+    text-decoration: none;
+    color: black;
+    
+    }
+
+}
+
+
+
+.project-item {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    margin: 0;
+    padding: .5rem;
+    height: 10rem;
+    border: 1px black solid;
+    border-radius: .5rem;
+
+}
+
+.project-item:hover {
+    background-color: $header-secondary-color;
+
+}
+
+
+
+.project-display {
+    display: block;
+    margin: 0;
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    border-radius: .5rem;
+
+}
+
+
+
+
+.project-title {
+    color: black;
+    text-align: left;
+    margin: 0 !important;
+    padding: 0 .5rem;
+}
+
+
+
+
+.project-date {
+    color: black;
+    text-align: right;
+    font-style: italic;
+    padding-right: 5%;
+
+}
+
+
+@media print, screen and (max-width: 1099px) and (min-width: 768px) {
+    .portfolio-grid {
+        padding: 0rem 2rem;
+    
+    }
+
+    
+
+
+}
+
+
+@media print, screen and (max-width: 767px) and (min-width: 100px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        padding: 0 !important;
+    
+    }
+
+    
+
+}
