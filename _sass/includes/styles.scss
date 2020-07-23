@@ -1,9 +1,6 @@
 .wrapper {
-  width: $wrapper-width; //860 originally
-  margin-top: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
+  width: $wrapper-width;
+  margin: auto;
 }
 
 *,
@@ -20,7 +17,6 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 
@@ -107,6 +103,11 @@ a {
   h5,
   h6 {
     margin: 0px;
+  }
+
+  h1 a {
+    text-decoration: none;
+    color: $black;
   }
 
   &-top {
@@ -240,7 +241,7 @@ a {
 
 
 .layout-content {
-  margin-top: .75em;
+  margin-top: 2rem;
   width: $section-width; //500 orig
   min-height: $section-height;
   float: right;

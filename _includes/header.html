@@ -1,11 +1,11 @@
 <section>
 
+  <!-- Overlay visible for mobile-->
   <div id="myNav" class="overlay">
+
     <!-- The overlay -->
     <div class="overlay-top">
       <span onclick="closeNav()">
-        <!-- Button to close the overlay navigation -->
-
         <a href="javascript:void(0)" id="closeNav" class="fas fa-times inactive"></a>
       </span>
     </div>
@@ -29,13 +29,16 @@
 
   </div>
 
-  <!-- open/show the overlay navigation menu -->
   <span class="toggle-menu" onclick="openNav()">
     <i id="openNav" class="fa fa-bars active" aria-hidden="true"></i>
-
   </span>
 
+  <!-- End overlay layout -->
 
+
+
+
+  <!-- Normal header layout --> 
   <div class="layout-header-top">
     <div class="layout-header-avatar">
       {% if site.github.owner_gravatar_url %}
@@ -48,7 +51,8 @@
 
     <div class="layout-header-info">
       <h1 class="layout-header-title">
-        {{ site.title | default: site.github.owner_name }}
+        <a href="{{ site.url }}">{{ site.title | default: site.github.owner_name }}</a>
+        
       </h1>
       {% if site.subtitle %}
       <h3 class="layout-header-subtitle">
