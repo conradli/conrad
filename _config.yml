@@ -38,7 +38,7 @@ collections:
 
 # Side Menu Links
 menu:
-  - text: Blog
+  - text: Home
     link: /
     icon: ""
 

@@ -1,29 +1,32 @@
-
-
 .image-gallery {
     padding: 0;
     overflow: auto;
+    
 }
 
 .image-gallery li {
     list-style: none;
-    display: block;
+}
+
+.image-gallery li a {
+    color: $black;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+
 }
 
 .image-gallery li a span {
     display: block;
-    overflow: hidden;
-    padding: .25rem 0 1.5rem .1rem;
+    padding: .25rem 0 1.5rem 0;
     line-height: 1.5;
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
+
 
 }
 
 .image-gallery li a img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
