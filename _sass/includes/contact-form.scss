@@ -44,7 +44,7 @@
 #contact-submit-btn {
     display: block;
     width: 12rem;
-    margin: 1.5rem auto;
+    margin: .5rem auto;
     padding: .5rem;
     font-size: 1.5rem;
     background: $primary-color;
@@ -60,6 +60,10 @@
 @media print, screen and (max-width: 767px) and (min-width: 100px) {
     #contact-form {
         padding: 0rem 0rem 2rem;
+    }
+
+    #contact-header {
+        margin-bottom: .5rem;
     }
 
 

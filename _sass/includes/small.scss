@@ -82,7 +82,7 @@
 
   /* The Overlay (background) */
   .overlay {
-    position: fixed;
+    position: absolute;
     display: grid;
     height: 100%;
     width: 0;
