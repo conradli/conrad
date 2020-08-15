@@ -1,6 +1,4 @@
 #contact-form  {
-    display: flex;
-    flex-wrap: column nowrap;
     padding: 0rem 2rem 2rem;
     border: none;
 }
@@ -9,6 +7,7 @@
     text-align: center;
     margin-bottom: 2rem;
 }
+
 
 .label-header {
     font-size: 1.25rem;
@@ -26,9 +25,16 @@
     
 }
 
+.contact-input-field:focus, #contact-submit-btn:focus  {
+    outline: none;
+    border: 2px solid $secondary-color !important;
+
+}
+
 #full-name, #email-address, #subject {
     height: 3rem;
 }
+
 
 #message {
     resize: none;
@@ -36,14 +42,16 @@
 }
 
 #contact-submit-btn {
-    margin: 2rem auto 1.5rem;
+    display: block;
+    width: 12rem;
+    margin: 1.5rem auto;
     padding: .5rem;
     font-size: 1.5rem;
-    width: 12rem;
     background: $primary-color;
     border: 1px solid #ccc;
     border-radius: .5rem;
 }
+
 
 #contact-submit-btn:hover {
     background-color: $secondary-color;
