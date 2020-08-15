@@ -1,6 +1,5 @@
 #contact-form  {
     display: flex;
-    flex-wrap: column wrap;
     padding: 0rem 2rem 2rem;
     border: none;
 }
@@ -22,11 +21,11 @@
     border: none;
     border: solid 1px #ccc;
     border-radius: .5rem;
-    padding-left: .5rem;
+    padding: .5rem;
     
 }
 
-#full-name, #email-address {
+#full-name, #email-address, #subject {
     height: 3rem;
 }
 

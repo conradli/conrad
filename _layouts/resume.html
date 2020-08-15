@@ -27,35 +27,15 @@
       </section>
 
       <section class="layout-content" id="resume-section">
-        <header class="resume-header">
+        <header class="page-header">
+          <h1 id="resume">Resume</h1>
 
-          <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
+          <a href="{{ '/assets/resume.pdf' | relative_url }}" target="_blank" class="download-section">
+            <i id="download-resume-icon" class="fas fa-download"></i>
+            <p id="download-resume" class="download-resume">Download</p>
 
-          {% if site.display_header_contact_info == 'true' %}
-          <div class="header-contact-info">
-            <p>{{ site.resume_header_contact_info }}</p>
-          </div>
-          {% endif %}
-
-          <div class="title-bar no-print">
-
-            {% if site.resume_title != "" %}
-            <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
-            {% endif %}
-
-            <a href="{{ '/assets/resume.pdf' | relative_url }}" target="_blank" class="icon-links-bar">
-              <p class="download-resume">Download</p>
-              <i class="fas fa-download"></i>
-
-            </a>
-
-            {% include resume/icon-links.html %}
-          </div>
-
+          </a>
         </header>
-
-
-
 
 
 

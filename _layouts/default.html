@@ -35,9 +35,9 @@
         </p>
       </section>
 
+      
 
 
-      <br><br><br>
 
 
       <section class="blog">
@@ -74,6 +74,34 @@
         {% endif %}
 
       </section>
+
+      <h1 class="latest-post-header">Photography</h1>
+
+      <section class="photo-grid">
+
+        {% for photo in site.photography limit:2 %}
+
+        <a href="{{ site.url }}{{ photo.url }}">
+
+          <div class="photo-item">
+            <img class="photo-display" src="{{ site.baseurl }}{{ photo.display }}">
+            <h2 class="photo-title">{{photo.title}}, {{photo.country}}</h2>
+            <time class="photo-date">{{ photo.date | date: "%m-%d-%Y" }}</time>
+          </div>
+        </a>
+
+        {% endfor %}
+
+      </section>
+      
+      {% assign postNum = site.photography | size %}
+      {% if postNum > 2 %}
+      <a href="{{ '/photography/' | relative_url }}">
+        <button class="see-all-blog">
+          <h3>See More Posts</h3>
+        </button>
+      </a>
+      {% endif %}
 
     </div>
 

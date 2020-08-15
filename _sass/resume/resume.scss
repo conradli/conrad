@@ -1,98 +1,54 @@
 
+// Resume header bar
+#resume {
+  display: inline-block;
+  
+}
+
+#download-resume, #download-resume-icon {
+  font-size: 24px;
+  float: right;
+  color: $secondary-color;//rgba(182, 180, 179, 0.8);
+  margin: 2rem 0 0 0 !important;
+
+}
+
+
+#download-resume {
+  padding-right: 0.25rem;
+}
+
+
+.download-section:hover {
+
+  #download-resume,
+  .fas.fa-download,
+  #download-resume-icon {
+    color: #9c9c9c;
+    text-decoration: none;
+  }
+  
+}
+
+
+
+// section header
 .resume-section-header {
   @include section_border;
   margin-bottom: 1rem;
 
   h2 {
-    @include sans;
-    font-weight: 900;
-    font-size: 1.75rem;
+    font-weight: 700;
     letter-spacing: -.05rem;
     margin: 0;
   }
 }
 
 
-.resume-header {
-  padding: 1.5rem 0 0 0;
-
-  .header-name {
-    @include sans;
-    border-bottom: 4px solid #c7c7c7;
-    padding: .2rem 0 .4rem;
-    font-size: 3rem;
-    font-weight: 900;
-    text-align: center;
-    letter-spacing: -.15rem;
-    line-height: 1;
-    margin: 0;
-  }
-
-  .header-contact-info {
-    @include sans;
-    text-align: center;
-  }
-
-  .header-contact-info p a {
-    color: inherit;
-  }
-
-  .title-bar {
-    @include clearfix;
-    height: 3.4em;
-    margin-top: 0rem;
-    padding: 0 !important;
-
-    .header-title {
-      @include sans;
-      font-weight: 300;
-      font-size: 1.75rem;
-      line-height: 2rem;
-      letter-spacing: -.05rem;
-      text-align: center;
-      margin: 0 0 .5rem;
-
-
-    }
-  }
-
-
-}
-
-.icon-links {
-  margin: 0;
-  padding: 0;
-  bottom: .4rem;
-  list-style: none;
-  position: relative;
-  text-align: right;
-  width: auto;
-  float: right;
 
 
 
-  .icon-link-item {
-    display: inline-block;
-    margin-left: 5px;
-  }
-
-  .icon-link {
-    display: inline-block;
-
-    &:hover .icon path {
-      fill: #333;
-      @include transition(all .2s ease);
-    }
-  }
-
-  .icon {
-    height: 28px;
-  }
-}
-
-
-
-// resume content styles
+// resume content body styles
 
 .content-section {
   margin: 0 0 3rem;
@@ -158,6 +114,9 @@
     margin: 0 0 0.25rem;
   }
 }
+
+
+
 
 
 
@@ -227,45 +186,16 @@
 }
 
 
+
 @media print,
 screen and (max-width: 767px) and (min-width: 100px) {
+
+  #download-resume, #download-resume-icon {
+    margin: 1.5rem 0 0 0 !important;
+  
+  }
   .resume-item-date {
     display: none;
   }
 }
 
-
-.icon-links-bar:hover {
-
-  .download-resume,
-  .fas.fa-download {
-    color: rgba(5, 5, 5, 0.6);
-    text-decoration: none;
-  }
-
-
-}
-
-.download-resume,
-.fas.fa-download {
-  position: relative;
-  display: block;
-  float: left;
-  color: rgba(182, 180, 179, 0.8);
-  margin: 0 !important;
-  bottom: 0.25em;
-
-
-}
-
-.download-resume {
-  font-size: 24px;
-  line-height: 2.5em !important;
-  padding-right: 0.25em;
-}
-
-.fas.fa-download {
-  font-size: 24px;
-  line-height: 2.25em !important;
-
-}

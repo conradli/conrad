@@ -3,7 +3,10 @@ subtitle: Bowdoin CS Student
 description: 
 favicon: 
 
-about: "I am a senior majoring in Computer Science and minoring in Economics at Bowdoin College. For summer 2020, I am interning as a Global Technology Analyst at Bank of America. I am interested in finding ways to incorporate technology into people's lives to bring about social good. You can reach me at zhikangli@hotmail.com. I'd love to chat!"
+about: 
+  "I am a senior majoring in Computer Science and minoring in Economics at Bowdoin College. For summer 2020, I am interning as a Global Technology Analyst at Bank of America. I am interested in finding ways to incorporate technology into people's lives to bring about social good. You can reach me at zhikangli@hotmail.com. I'd love to chat!
+  <br><br>
+  Here is another section about me."
 
 
 defaults:

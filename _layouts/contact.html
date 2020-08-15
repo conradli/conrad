@@ -27,32 +27,37 @@
 
     <div class="layout-content">
 
-      <form accept-charset="utf-8" action="https://formspree.io/xlepjlve" method="post">
+      <form accept-charset="utf-8" action="https://formspree.io/xpzynenz" method="post">
         <fieldset id="contact-form">
           <h1 id="contact-header">GET IN TOUCH</h1>
 
 
           <label class="label-header" for="full-name">Full Name</label>
-          <input class="contact-input-field" type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
+          <input class="contact-input-field" type="text" name="Name" id="full-name" placeholder="First and Last Name"
+            required="">
 
           <label class="label-header" for="email-address">Email Address</label>
-          <input class="contact-input-field" type="email" name="_replyto" id="email-address" placeholder="email@gmail.com" required="">
+          <input class="contact-input-field" type="email" name="Email" id="email-address"
+            placeholder="email@gmail.com" required="">
+
+          <label class="label-header" for="Subject">Subject</label>
+          <input class="contact-input-field" type="text" name="Subject" id="subject"
+            placeholder="Subject" required="">
 
           <label class="label-header" for="message">Message</label>
-          <textarea class="contact-input-field" rows="10" name="message" id="message" minlength="10" placeholder="Leave me a message. Thanks!"
-            required=""></textarea>
+          <textarea class="contact-input-field" rows="10" name="Message" id="message" minlength="10"
+            placeholder="Leave me a message. Thanks!" required=""></textarea>
 
 
           <!-- Spam protector -->
           <input type="text" name="_gotcha" style="display:none">
 
-          <!-- Thank you redirect -->
-          <input type="hidden" name="_next" value="www.google.com">
-
-          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
 
           <input id="contact-submit-btn" type="submit" value="Submit">
 
+          <!-- Thank you redirect -->
+          <!-- Not working -->
+          <input type="hidden" name="_next" value="https://conradli.com">
         </fieldset>
       </form>
 
