@@ -1,0 +1,58 @@
+#contact-form  {
+    display: flex;
+    flex-wrap: column wrap;
+    padding: 0rem 2rem 2rem;
+    border: none;
+}
+
+#contact-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.label-header {
+    font-size: 1.25rem;
+    margin-bottom: .1rem;
+}
+
+
+.contact-input-field {
+    width: 100%;
+    margin-bottom: .75rem;
+    border: none;
+    border: solid 1px #ccc;
+    border-radius: .5rem;
+    padding-left: .5rem;
+    
+}
+
+#full-name, #email-address {
+    height: 3rem;
+}
+
+#message {
+    resize: none;
+    height: 17rem;
+}
+
+#contact-submit-btn {
+    margin: 2rem auto 1.5rem;
+    padding: .5rem;
+    font-size: 1.5rem;
+    width: 12rem;
+    background: $primary-color;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+}
+
+#contact-submit-btn:hover {
+    background-color: $secondary-color;
+}
+
+@media print, screen and (max-width: 767px) and (min-width: 100px) {
+    #contact-form {
+        padding: 0rem 0rem 2rem;
+    }
+
+
+}

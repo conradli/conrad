@@ -108,7 +108,7 @@
 
   /* Position the content inside the overlay */
   .overlay-content {
-    position: relative;
+    position: static;
     display: block;
     top: 0;
     width: 100%;

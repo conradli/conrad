@@ -8,7 +8,8 @@
 
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" media="all" type="text/css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" media="all" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" media="all"
+    type="text/css">
   {% seo %}
 
 
@@ -16,28 +17,62 @@
 
 <body>
 
-    <div class="wrapper">
-      <div class="layout-header">
+  <div class="wrapper">
+    <div class="layout-header">
 
-        {% include header.html %}
+      {% include header.html %}
 
-      </div>
-      
-
-      <div class="layout-content">
-        {{ content }} 
-      </div>
-
-      <div class="layout-footer"> 
-        {% include footer.html %}
-      </div>
     </div>
 
 
+    <div class="layout-content">
+
+      <form accept-charset="utf-8" action="https://formspree.io/xlepjlve" method="post">
+        <fieldset id="contact-form">
+          <h1 id="contact-header">GET IN TOUCH</h1>
+
+
+          <label class="label-header" for="full-name">Full Name</label>
+          <input class="contact-input-field" type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
+
+          <label class="label-header" for="email-address">Email Address</label>
+          <input class="contact-input-field" type="email" name="_replyto" id="email-address" placeholder="email@gmail.com" required="">
+
+          <label class="label-header" for="message">Message</label>
+          <textarea class="contact-input-field" rows="10" name="message" id="message" minlength="10" placeholder="Leave me a message. Thanks!"
+            required=""></textarea>
+
+
+          <!-- Spam protector -->
+          <input type="text" name="_gotcha" style="display:none">
+
+          <!-- Thank you redirect -->
+          <input type="hidden" name="_next" value="www.google.com">
+
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+
+          <input id="contact-submit-btn" type="submit" value="Submit">
+
+        </fieldset>
+      </form>
+
+    </div>
+
+    <div class="layout-footer">
+      {% include footer.html %}
+    </div>
+  </div>
+
+
   <!-- Scripts go below here -->
+
   <script type="text/javascript" src="{{ '/assets/js/main.js' | relative_url }} "></script>
 
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
 
 </body>
 

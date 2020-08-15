@@ -38,7 +38,7 @@
 
 
 
-  <!-- Normal header layout --> 
+  <!-- Normal header layout -->
   <div class="layout-header-top">
     <div class="layout-header-avatar">
       {% if site.github.owner_gravatar_url %}
@@ -52,7 +52,7 @@
     <div class="layout-header-info">
       <h1 class="layout-header-title">
         <a href="{{ site.url }}">{{ site.title | default: site.github.owner_name }}</a>
-        
+
       </h1>
       {% if site.subtitle %}
       <h3 class="layout-header-subtitle">
@@ -66,7 +66,7 @@
 
   <div class="layout-header-middle">
     <h1 class="layout-header-title-medium">
-      {{ site.title | default: site.github.owner_name }}
+      <a href="{{ site.url }}">{{ site.title | default: site.github.owner_name }} </a>
     </h1>
     <ul class="layout-header-menu">
       {% for menu in site.menu %}
