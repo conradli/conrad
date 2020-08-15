@@ -136,7 +136,7 @@
   .resume-item-title,
   .resume-item-date,
   .resume-item-details,
-  .resume-item-copy,
+  .resume-item-summary,
   .resume-item-list {
     a {
       color: #333;
@@ -150,7 +150,11 @@
     }
   }
 
-  .resume-item-copy {
+  .resume-item-title a {
+    color: $header-secondary-color;
+  }
+
+  .resume-item-summary {
     margin: 0 0 0.25rem;
   }
 }
@@ -236,7 +240,7 @@ screen and (max-width: 767px) and (min-width: 100px) {
   .download-resume,
   .fas.fa-download {
     color: rgba(5, 5, 5, 0.6);
-    text-decoration: underline;
+    text-decoration: none;
   }
 
 
