@@ -18,7 +18,7 @@
 
 
 .photo-item:hover {
-    box-shadow: .5em .6em $header-secondary-color;
+    box-shadow: .5em .6em $secondary-color;
     transform: translate3d(-15px,-10px, 0);
 
 }
@@ -75,7 +75,7 @@
     .photo-item:hover {
         transform: none;
         box-shadow: none;
-        background-color: $header-secondary-color;
+        background-color: $secondary-color;
     
     }
 
@@ -101,7 +101,7 @@
     .photo-item:hover {
         transform: none;
         box-shadow: none;
-        background-color: $header-secondary-color;
+        background-color: $secondary-color;
     
     }
 

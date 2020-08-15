@@ -91,8 +91,8 @@ a {
   width: $header-width;
   height: $header-height;
   -webkit-font-smoothing: subpixel-antialiased;
-  background-color: $header-primary-color;
-  box-shadow: .27em .27em $inner-box-shadow, .65em .65em 0 $header-secondary-color; 
+  background-color: $primary-color;
+  box-shadow: .27em .27em $inner-box-shadow, .65em .65em 0 $secondary-color; 
   padding: 1em;
 
 
@@ -197,7 +197,7 @@ a {
     }
     
     .active {
-      background-color: $header-secondary-color;
+      background-color: $secondary-color;
       border-radius: .5em;
       text-decoration: underline;
     }
