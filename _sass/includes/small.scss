@@ -82,7 +82,7 @@
 
   /* The Overlay (background) */
   .overlay {
-    position: absolute;
+    position: fixed;
     display: grid;
     height: 100%;
     width: 0;
@@ -109,7 +109,7 @@
 
   /* Position the content inside the overlay */
   .overlay-content {
-    position: static;
+    position: relative;
     display: block;
     top: 0;
     width: 100%;
