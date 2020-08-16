@@ -19,13 +19,14 @@
 
 
 
-
-
 .image-img {
     object-fit: contain;
-    width: $section-width;
+    display: block;
+    width: 100%;
+    max-width: $section-width;
     max-height: 430px;
-    background: rgba($color: black, $alpha: .9);
+    margin: auto !important;
+    background-color: rgba($color: black, $alpha: .9);
 }
 
 
@@ -34,5 +35,14 @@
     padding: .25rem 0 1.5rem 0;
     line-height: 1;
 
+
+}
+
+
+@media print, screen and (max-width: 767px) and (min-width: 100px) {
+    .image-img {
+        width: 100%;
+        max-height: 225px;
+    }
 
 }
