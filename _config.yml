@@ -48,9 +48,9 @@ menu:
     link: /blog/
     icon: ""
     
-  - text: Portfolio
-    link: /portfolio/
-    icon: ""
+  #- text: Portfolio
+  #  link: /portfolio/
+  #  icon: ""
   
   - text: Photography
     link: /photography/

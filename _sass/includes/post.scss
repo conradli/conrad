@@ -1,4 +1,14 @@
+.post-title {
+    margin-bottom: 0 !important;
+}
+
+
 .post-date {
+    margin-top: 0 !important;
+    margin-bottom: 1.5rem !important;
+    padding-bottom: .5rem !important;
     color: rgb(112, 112, 112);
-    padding-bottom: 3em;
+    font-weight: 400;
+    border-bottom: 3px double black;
+
 }

@@ -28,8 +28,8 @@
 
 
         <div class="layout-content" >
-            <h1> {{page.title }}, {{page.country}} </h1>
-
+            <h1 class="post-title"> {{ page.title }} </h1>
+            <h3 class="post-date"> {{ page.date | date: "%B %-d, %Y" }} </h3>
             {{ content }}
 
             {% if page.carousel %}
@@ -37,10 +37,10 @@
                 {% for file in page.carousel %}
                 {% assign filenameparts = file.image | split: "/" %}
                 {% assign filename = filenameparts | last | replace: file.extname,"" %}
-                <li>
-                    <a href="{{ file.image | relative_url }}">
-                        <img src="{{ file.image | relative_url }} ">
-                        <span class="image-caption">{{file.caption}}</span>
+                <li class="image-box">
+                    <a class="image-caption" href="{{ file.image | relative_url }}">
+                        <img class="image-img" src="{{ file.image | relative_url }}">
+                        <span class="image-caption-placement">{{file.caption}}</span>
                     </a>
 
                 </li>

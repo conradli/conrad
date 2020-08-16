@@ -1,32 +1,38 @@
 .image-gallery {
     padding: 0;
     overflow: auto;
-    
+
 }
+
 
 .image-gallery li {
     list-style: none;
+
+    .image-caption {
+        color: $black;
+        font-style: italic;
+        font-weight: 300;
+        text-align: center;
+        text-decoration: none;
+    }
 }
 
-.image-gallery li a {
-    color: $black;
-    font-style: italic;
-    font-weight: 300;
-    text-align: center;
-    text-decoration: none;
 
+
+
+
+.image-img {
+    object-fit: contain;
+    width: $section-width;
+    max-height: 430px;
+    background: rgba($color: black, $alpha: .9);
 }
 
-.image-gallery li a span {
+
+.image-caption-placement {
     display: block;
     padding: .25rem 0 1.5rem 0;
-    line-height: 1.5;
+    line-height: 1;
 
 
 }
-
-.image-gallery li a img {
-    width: 100%;
-    height: auto;
-}
-
