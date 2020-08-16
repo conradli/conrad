@@ -242,12 +242,10 @@ a {
 
 .layout-content {
   margin-top: 2rem;
-  width: $section-width; //500 orig
-  min-height: $section-height;
+  width: $section-width;
   float: right;
   padding-bottom: 20px;
   overflow-x: hidden;
-  overflow-y: hidden;
   border: none;
   p, li, a {
     line-height: 1.8rem;
