@@ -243,9 +243,11 @@ a {
 .layout-content {
   margin-top: 2rem;
   width: $section-width;
+  min-height: $section-height;
   float: right;
   padding-bottom: 20px;
   overflow-x: hidden;
+  overflow-y: hidden;
   border: none;
   p, li, a {
     line-height: 1.8rem;
