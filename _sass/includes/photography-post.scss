@@ -20,12 +20,12 @@
 
 
 .image-img {
-    object-fit: contain;
     display: block;
+    margin: auto !important;
+    object-fit: contain;
     width: 100%;
     max-width: $section-width;
     max-height: 430px;
-    margin: auto !important;
     background-color: rgba($color: black, $alpha: .9);
 }
 
@@ -41,8 +41,8 @@
 
 @media print, screen and (max-width: 767px) and (min-width: 100px) {
     .image-img {
-        width: 100%;
-        max-height: 225px;
+        max-width: calc(100vw-40px);
+        max-height: 260px;
     }
 
 }
