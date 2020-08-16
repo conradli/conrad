@@ -64,14 +64,7 @@
 
 }
 
-
-@media print, screen and (max-width: 1099px) and (min-width: 601px) {
-    .photo-grid {
-        padding: 0rem 1rem;
-        column-gap: 1rem;
-    
-    }
-
+@media print, screen and (max-width: 1099px) and (min-width: 100px) {
     .photo-item:hover {
         transform: none;
         box-shadow: none;
@@ -88,11 +81,18 @@
 
     .photo-display {
         object-fit: fill;
-
-    
+        max-height: 17rem;    
     }
 
 
+}
+
+@media print, screen and (max-width: 1099px) and (min-width: 601px) {
+    .photo-grid {
+        padding: 0rem 1rem;
+        column-gap: 1rem;
+    
+    }
 
 }
 
@@ -104,26 +104,5 @@
         padding: 0 !important;
     
     }
-
-    .photo-item:hover {
-        transform: none;
-        box-shadow: none;
-        background-color: $secondary-color;
-    
-    }
-
-    .photo-item {
-        height: 22rem;
-        width: 90%;
-        margin: auto;
-    }
-
-    .photo-display {
-        object-fit: fill;
-
-    
-    }
-
-
 
 }
