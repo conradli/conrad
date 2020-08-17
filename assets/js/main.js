@@ -19,7 +19,7 @@ function gestureStart() {
 document.getElementById("openNav").addEventListener("click", function(){
   $("body").scrollTop(0);
   document.getElementById('openNav').className = "fa fa-bars inactive"; 
-  document.getElementsByClassName('layout-content')[0].style.overflow = "hidden";
+  //document.getElementsByClassName('layout-content')[0].style.overflow = "hidden";
 
   openNav();
   document.getElementById('closeNav').className = "fas fa-times active";
@@ -29,7 +29,7 @@ document.getElementById("openNav").addEventListener("click", function(){
 document.getElementById("closeNav").addEventListener("click", function() {
   $("body").scrollTop(0);
   document.getElementById('closeNav').className = "fas fa-times inactive";
-  document.getElementsByClassName('layout-content')[0].style.overflow = "scroll";
+  //document.getElementsByClassName('layout-content')[0].style.overflow = "scroll";
 
 
   document.getElementById('openNav').className = "fa fa-bars active"; 

@@ -34,9 +34,9 @@ body {
 
 body {
   @include sans;
-  background-color: $main-background-color;
+  background-color: var(--bg-color);
   font: 16px/1.5 $main-font-family;
-  color: $main-text-color;
+  color: var(--font-color);
 }
 
 
@@ -63,6 +63,7 @@ h5 {
 h6 {
   font-size: .6rem;
 }
+
 
 a {
 
@@ -109,7 +110,7 @@ a {
 
   h1 a {
     text-decoration: none;
-    color: $black;
+    color: var(--font-color);
   }
 
   &-top {

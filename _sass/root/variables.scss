@@ -1,4 +1,3 @@
-
 // Container width
 $wrapper-width: 968px;
 $header-width: 270px;
@@ -11,11 +10,6 @@ $layout-header-top-height: 260px;
 $layout-header-middle-height: 260px; // 286 for portfolio
 $layout-header-bottom-height: 50px;
 
-
-
-
-$layout-content-header: 0px;
-$layout-content-right: 0px;
 
 // Styling
 $white: #fff;
@@ -32,17 +26,7 @@ $font-times: "Times New Roman", Times, serif;
 $font-georgia: "Georgia", serif;
 $font-palatino: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
-
-$main-background-color: $white;
-$main-text-color: $black;
-$main-border-color: rgba(0,0,0,0.5);
-$primary-color: #f9f9f9;
-$secondary-color: #A8D0E6;
-$gallery-grid-color: #d3d3d3;
-$button-color:  rgb(224,224,224);
-$inner-box-shadow: black;
-$layout-header-middle-border: 1px solid $main-text-color;
-
+// Selected font style
 $sans-font: $font-apple-system;
 $serif-font: $font-times; 
 
@@ -51,5 +35,30 @@ $main-font-family: $sans-font;
 
 
 // resume variables 
-
 $grid-gutter: 10px !default;
+
+$primary-color: #f9f9f9;
+$secondary-color: #A8D0E6;
+$main-background-color: #fff;
+$main-text-color: #333;
+
+$main-border-color: rgba(0,0,0,0.5);
+$gallery-grid-color: #d3d3d3;
+$button-color:  rgb(224,224,224);
+$inner-box-shadow: black;
+$layout-header-middle-border: 1px solid $main-text-color;
+
+
+:root {
+    --primary-color: $primary-color;
+    --secondary-color: $secondary-color;
+    --font-color: $main-text-color;
+    --bg-color: $main-background-color;
+}
+
+[data-theme="dark"] {
+    --primary-color: $primary-color;
+    --secondary-color: $secondary-color;
+    --font-color: $white;
+    --bg-color: $black;
+}

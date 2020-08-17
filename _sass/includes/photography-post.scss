@@ -9,7 +9,7 @@
     list-style: none;
 
     .image-caption {
-        color: $black;
+        color: var(--font-color);
         font-style: italic;
         font-weight: 300;
         text-align: center;
