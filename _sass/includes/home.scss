@@ -1,11 +1,14 @@
-.about {
+.about{
     display: block;
 }
 
+#about b{
+    color: darken($color: $secondary-color, $amount: 15);
+}
 
 .latest-post-header {
     display: block;
     border-top: 3px double black;
     border-bottom: 2px solid black;
-    margin-top: 6rem !important;
+    margin-top: 2rem !important;
 }

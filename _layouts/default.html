@@ -30,7 +30,7 @@
 
       <section class="about">
         <h1 class="page-header">Hi, my name is Conrad!</h1>
-        <p>
+        <p id="about">
           {{ site.about }}
         </p>
       </section>
@@ -66,11 +66,14 @@
 
         {% assign postNum = site.posts | size %}
         {% if postNum > 3 %}
-        <a href="{{ '/blog/' | relative_url }}">
-          <button class="see-all-blog">
-            <h3>See More Posts</h3>
-          </button>
-        </a>
+        <div>
+          <a href="{{ '/blog/' | relative_url }}" style="display:block;">
+            <button class="see-all-blog">
+              <h3>See More Posts</h3>
+            </button>
+          </a>
+        </div>
+       
         {% endif %}
 
       </section>

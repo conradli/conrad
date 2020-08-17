@@ -4,10 +4,20 @@ description:
 favicon: 
 
 about: 
-  "I am a senior majoring in Computer Science and minoring in Economics at Bowdoin College. For summer 2020, I am interning as a Global Technology Analyst at Bank of America. I am interested in finding ways to incorporate technology into people's lives to bring about social good. You can reach me at zhikangli@hotmail.com. I'd love to chat!
-  <br><br>
-  Here is another section about me."
+  "I am a senior majoring in Computer Science and minoring in Economics at Bowdoin College. I am interested in the intersection between technology and social good, specificially as it relates to education and providing opportunities for first-generation college students such as myself. 
 
+  <br><br>
+
+  For summer 2020, I was an Global Tech Analyst at Bank of America where my team delivered the <b>top three time series prediction models</b> for daily ATM total cash volume estimations out of all intern groups. It was a great experience and I am grateful for my superb team.
+
+  <br><br>
+  
+  <b>I will graduate in May 2021 and I am interested in full-time job opportunities.</b> I have coding experience with Python, Java, Kotlin, and HTML/CSS/JS (I wrote this website almost entirely from scratch). I have experience with machine learning models, agile development, model-view-controller architecture, and a willingness to learn. 
+
+  <br><br>
+  <b>You can reach me at zhikangli@hotmail.com. I'd love to chat!</b>
+
+  "
 
 defaults:
   -
