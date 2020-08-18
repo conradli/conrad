@@ -3,12 +3,15 @@
 }
 
 #about b{
-    color: darken($color: $secondary-color, $amount: 15);
+    color: var(--secondary-color);
+    filter: contrast(95%);
+    
 }
+
 
 .latest-post-header {
     display: block;
-    border-top: 3px double black;
-    border-bottom: 2px solid black;
+    border-top: 3px double var(--border-color);
+    border-bottom: 2px solid var(--border-color);
     margin-top: 2rem !important;
 }

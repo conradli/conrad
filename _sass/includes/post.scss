@@ -7,8 +7,8 @@
     margin-top: 0 !important;
     margin-bottom: 1.5rem !important;
     padding-bottom: .5rem !important;
-    color: rgb(112, 112, 112);
+    color: var(--font-color);
     font-weight: 400;
-    border-bottom: 3px double black;
+    border-bottom: 3px double var(--border-color);
 
 }

@@ -40,29 +40,12 @@ body {
 }
 
 
-h1 {
-  font-size: 2rem; //1.8rem;
-}
-
-h2 {
-  font-size: 1.5rem; //1.4rem;
-}
-
-h3 {
-  font-size: 1rem;
-}
-
-h4 {
-  font-size: .8rem;
-}
-
-h5 {
-  font-size: .7rem;
-}
-
-h6 {
-  font-size: .6rem;
-}
+h1 {font-size: 2rem;}
+h2 {font-size: 1.5rem;}
+h3 {font-size: 1rem;}
+h4 {font-size: .8rem;}
+h5 {font-size: .7rem;}
+h6 {font-size: .6rem;}
 
 
 a {
@@ -79,6 +62,12 @@ a {
   }
 }
 
+
+/*********************
+******* Header *******
+*********************/
+
+// Overlay
 .overlay,
 .overlay-content,
 .fa.fa-bars,
@@ -94,8 +83,8 @@ a {
   width: $header-width;
   height: $header-height;
   -webkit-font-smoothing: subpixel-antialiased;
-  background-color: $primary-color;
-  box-shadow: .27em .27em $inner-box-shadow, .65em .65em 0 $secondary-color; 
+  background-color: var(--primary-color);
+  box-shadow: .27rem .27rem var(--inner-box-shadow), .65rem .65rem 0 var(--secondary-color);
   padding: 1em;
 
 
@@ -177,14 +166,13 @@ a {
     list-style: none;
     height: $layout-header-middle-height;
     padding-left: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0; 
 
     li {
       display: block;
 
       &:not(.active):hover {
-        background-color: $button-color;
+        background-color: var(--highlight-nav-color);
         border-radius: .5em;
         text-decoration: underline;
         
@@ -193,14 +181,21 @@ a {
       a {
         display: block;
         padding: 10px 10px 10px 40px;
-        color: $main-text-color !important;
+        color: var(--font-color) !important;
+        
         text-decoration: none !important;
         font-weight: 500;
       }
+
+      a:hover {
+        color: var(--font-color-hover) !important;
+      }
+
+
     }
     
     .active {
-      background-color: $secondary-color;
+      background-color: var(--secondary-color);
       border-radius: .5em;
       text-decoration: underline;
     }
@@ -229,11 +224,11 @@ a {
         margin: 0px;
 
         a:hover {
-          color: rgb(180, 180, 180);
+          color: var(--social-icon-color-hover);
         }
 
         a {
-          color: rgb(8, 8, 8);
+          color: var(--social-icon-color);
         }
       }
     }
@@ -241,7 +236,9 @@ a {
 }
 
 
-
+/*********************
+******* Layout *******
+*********************/
 
 .layout-content {
   margin-top: 2rem;
@@ -272,19 +269,27 @@ a {
 
 
 
+
+/*********************
+******* Footer *******
+*********************/
+
 .layout-footer {
   position: static;
-  margin: auto;
-  clear: both;
+  display: block;
   float: right;
+  clear: both;
   height: 50px;
   width: $section-width;
-  background-color: #FFF;
+  background-color: var(--bg-color);
   font-size: .75rem;
   text-align: right;
-  border-top: 1px solid rgba(172, 161, 161, 0.555);
+  border-top: 1px solid var(--border-color);
+  margin-bottom: 20px;
 
   &-social {
     display: none;
   }
+
+
 }

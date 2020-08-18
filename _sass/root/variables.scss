@@ -11,11 +11,6 @@ $layout-header-middle-height: 260px; // 286 for portfolio
 $layout-header-bottom-height: 50px;
 
 
-// Styling
-$white: #fff;
-$black: #333;
-
-
 
 //Sans-serif fonts
 $font-apple-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -33,32 +28,63 @@ $serif-font: $font-times;
 
 $main-font-family: $sans-font;
 
-
 // resume variables 
 $grid-gutter: 10px !default;
 
-$primary-color: #f9f9f9;
-$secondary-color: #A8D0E6;
-$main-background-color: #fff;
-$main-text-color: #333;
 
-$main-border-color: rgba(0,0,0,0.5);
+
 $gallery-grid-color: #d3d3d3;
 $button-color:  rgb(224,224,224);
-$inner-box-shadow: black;
-$layout-header-middle-border: 1px solid $main-text-color;
+
+$layout-header-middle-border: 1px solid var(--font-color);
 
 
 :root {
-    --primary-color: $primary-color;
-    --secondary-color: $secondary-color;
-    --font-color: $main-text-color;
-    --bg-color: $main-background-color;
+    --primary-color: #fafafa;
+    --secondary-color: #A8D0E6;
+    --inner-box-shadow: black;
+    --font-color: #333;
+    --bg-color: rgb(197, 197, 197)
+
+    --highlight-nav-color: rgb(224,224,224);
+    --social-icon-color: rgb(8, 8, 8);
+    --social-icon-color-hover: rgb(180, 180, 180);
+
+    --border-color: #ccc;
+
+
+    --photo-border-color: black;
+    --photo-bg-color: white;
 }
 
 [data-theme="dark"] {
-    --primary-color: $primary-color;
-    --secondary-color: $secondary-color;
-    --font-color: $white;
-    --bg-color: $black;
+    --primary-color: #39393f;
+    --secondary-color: #74b9ff;
+    --inner-box-shadow: #e4e4e4;
+
+    --font-color: #e5e5e5;
+    --font-color-hover: #e4e4e4;
+    --bg-color: #2e2e33;
+
+    --highlight-nav-color: rgb(65, 64, 64);
+    --social-icon-color: rgb(180, 180, 180);
+    --social-icon-color-hover: #f9f9f9;
+    
+    --border-color: #ccc;
+
+    h1, h2, h3, h4, h5, h6, p, input, textarea {
+        filter: brightness(0.85) contrast(1.1);
+    }
+
+    .photo-item {
+        filter: brightness(0.85) contrast(1.25);
+    }
+
+    .image-img {
+        filter: brightness(0.85) contrast(1.1);
+        background-color: rgba($color: black, $alpha: .4);
+    }
+    
+
 }
+

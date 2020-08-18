@@ -17,7 +17,7 @@ function gestureStart() {
 }
 
 document.getElementById("openNav").addEventListener("click", function(){
-  $("body").scrollTop(0);
+  document.body.scrollTop = 0;
   document.getElementById('openNav').className = "fa fa-bars inactive"; 
   //document.getElementsByClassName('layout-content')[0].style.overflow = "hidden";
 
@@ -27,7 +27,7 @@ document.getElementById("openNav").addEventListener("click", function(){
 });
 
 document.getElementById("closeNav").addEventListener("click", function() {
-  $("body").scrollTop(0);
+  document.body.scrollTop = 0;
   document.getElementById('closeNav').className = "fas fa-times inactive";
   //document.getElementsByClassName('layout-content')[0].style.overflow = "scroll";
 
@@ -46,4 +46,52 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+
+
+
+/* -------------------------------------------------------
+Credit: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 
+------------------------------------------------------- */
+
+const toggleSwitch = document.querySelectorAll('.theme-switch input[type="checkbox"]');
+
+
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+      toggleSwitch[0].checked = true;
+      toggleSwitch[1].checked = true;
+    }
+    
+
+}
+
+function switchTheme(e) {
+  if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      toggleSwitch[0].checked = true;
+      toggleSwitch[1].checked = true;
+      localStorage.setItem('theme', 'dark');
+
+  }
+
+  else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      toggleSwitch[0].checked = false;
+      toggleSwitch[1].checked = false;
+
+      localStorage.setItem('theme', 'light');
+
+  }    
+
+}
+
+toggleSwitch.forEach(function(toggle) {
+  toggle.addEventListener('click', switchTheme, false);
+});
+
+
 

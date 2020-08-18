@@ -1,58 +1,72 @@
 /*Simple css to style it like a toggle switch*/
-.theme-switch-wrapper {
-    display: flex;
-    align-items: center;
+
+.theme-switch {
+  display: inline-block;
+  height: 22px;
+  position: relative;
+  left: 127px;
+  top: 3px;
+  width: 40px;
+
+}
+
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ccc;
+
+  cursor: pointer;
+  position: absolute;
+  transition: .4s;
+
+}
+
+.slider:before {
+  position: absolute;
+  left: 3px;
+  bottom: 2px;
+  content: "";
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  transition: .4s;
+
+}
+
+
+
+input:checked+.slider {
+  background-color: var(--secondary-color);
+  background-repeat: no-repeat;
+  background-image: url('../../assets/moon-black.svg');
+  background-size: 12px;
+  background-position-x: 4px;
+  background-position-y: 4px;
+
+}
+
+input:checked+.slider:before {
+  transform: translateX(16px);
+}
+
+.slider.round {
+  border-radius: 22px;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/day-sunny.svg');
+  background-size: 14px;
+  background-position-x: 23px;
+  background-position-y: 4px;
   
-    em {
-      margin-left: 10px;
-      font-size: 1rem;
-    }
-  }
-  .theme-switch {
-    display: inline-block;
-    height: 34px;
-    position: relative;
-    width: 60px;
-  }
+}
+
+.slider.round:before {
+  border-radius: 50%;
   
-  .theme-switch input {
-    display:none;
-  }
-  
-  .slider {
-    background-color: #ccc;
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    background-color: #fff;
-    bottom: 4px;
-    content: "";
-    height: 26px;
-    left: 4px;
-    position: absolute;
-    transition: .4s;
-    width: 26px;
-  }
-  
-  input:checked + .slider {
-    background-color: #66bb6a;
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(26px);
-  }
-  
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
+}

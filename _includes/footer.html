@@ -1,17 +1,30 @@
 <section>
-    <div class="layout-footer-social">
-        {% if site.social_icons %}
-        <ul>
-          {% for social in site.social_icons %}
-          {% if social.icon %}
-          <li><a target="_blank" href="{{ social.link }}"><i class="{{ social.icon }}"></i></a></li>
-          {% endif %}
-          {% endfor %}
-        </ul>
-        {% endif %}
-    </div>
+  <p class="footer-note">This website was designed by <a href="https://github.com/conradli">Conrad Li</a></p>
 
-    <p>This website was designed by <a href="https://github.com/conradli">Conrad Li</a></p>
+  <div class="layout-footer-social">
+    {% if site.social_icons %}
+    <ul>
+      {% for social in site.social_icons %}
+      {% if social.icon %}
+      <li><a target="_blank" href="{{ social.link }}"><i class="{{ social.icon }}"></i></a></li>
+      {% endif %}
+      {% endfor %}
+      
+      <label class="theme-switch" for="checkbox2">
+        <input type="checkbox" id="checkbox2" />
+        <div class="slider round"></div>
+      </label>
+
+
+    </ul>
+
+
+
+    {% endif %}
+  </div>
+
+
+
 
 
 </section>

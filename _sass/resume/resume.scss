@@ -8,7 +8,7 @@
 #download-resume, #download-resume-icon {
   font-size: 24px;
   float: right;
-  color: $secondary-color;//rgba(182, 180, 179, 0.8);
+  color: var(--secondary-color);//rgba(182, 180, 179, 0.8);
   margin: 2rem 0 0 0 !important;
 
 }
@@ -107,7 +107,7 @@
   }
 
   .resume-item-title a {
-    color: $secondary-color;
+    color: var(--secondary-color);
   }
 
   .resume-item-summary {
