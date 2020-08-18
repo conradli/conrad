@@ -3,8 +3,7 @@
 }
 
 #about b{
-    color: var(--secondary-color);
-    filter: contrast(.85);
+    color: darken($color: $secondary-color, $amount: 15);
     
 }
 
