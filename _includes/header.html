@@ -108,7 +108,7 @@
       <ul>
         {% for social in site.social_icons %}
         {% if social.icon %}
-        <li><a target="_blank" href="{{ social.link }}"><i class="{{ social.icon }}"></i></a></li>
+        <li><a target="_blank" rel="noreferrer noopener" href="{{ social.link }}"><i class="{{ social.icon }}"></i></a></li>
         {% endif %}
         {% endfor %}
 

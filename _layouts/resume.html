@@ -30,7 +30,7 @@
         <header class="page-header">
           <h1 id="resume">Resume</h1>
 
-          <a href="{{ '/assets/resume.pdf' | relative_url }}" target="_blank" class="download-section">
+          <a href="{{ '/assets/resume.pdf' | relative_url }}" target="_blank" rel="noreferrer noopener" class="download-section">
             <i id="download-resume-icon" class="fas fa-download"></i>
             <p id="download-resume" class="download-resume">Download</p>
 
@@ -139,7 +139,7 @@
             <div class="resume-item-row">
               <h3 class="resume-item-title" itemprop="name">
                 {% if project.url %}
-                  <a href="{{ project.url }}" itemprop="url" target="_blank">{{ project.project }}</a>
+                  <a href="{{ project.url }}" itemprop="url" target="_blank"  rel="noreferrer noopener">{{ project.project }}</a>
                 {% else %}
                   {{ project.project }}
                 {% endif %}

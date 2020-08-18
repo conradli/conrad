@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" media="all" type="text/css">
 
 
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" media="all"
         type="text/css">
     {% seo %}
@@ -33,15 +31,27 @@
             {{ content }}
 
             {% if page.carousel %}
-            <ul class="image-gallery">
+            <ul class="image-gallery" id="image-gallery">
                 {% for file in page.carousel %}
                 {% assign filenameparts = file.image | split: "/" %}
                 {% assign filename = filenameparts | last | replace: file.extname,"" %}
+
+                {% assign counter = forloop.index %}
+
                 <li class="image-box">
+                    {% if counter >= 3 %}
                     <a class="image-caption" href="{{ file.image | relative_url }}">
-                        <img class="image-img" src="{{ file.image | relative_url }}">
-                        <span class="image-caption-placement">{{file.caption}}</span>
+                        <img class="image-img lazy" src="{{ file.timg | relative_url }}" aria-hidden="true"
+                        data-src="{{ file.image | relative_url }}" alt="{{ file.caption }}">
+                        <span class="image-caption-placement" aria-hidden="true">{{file.caption}}</span>
                     </a>
+                    {% else %}
+                
+                    <a class="image-caption" href="{{ file.image | relative_url }}">
+                        <img class="image-img" src="{{ file.image | relative_url }}" alt="{{ file.caption }}">
+                        <span class="image-caption-placement" aria-hidden="true">{{file.caption}}</span>
+                    </a>
+                    {% endif %}
 
                 </li>
 
@@ -64,6 +74,7 @@
     <!-- Scripts go below here -->
     <script type="text/javascript" src="{{ '/assets/js/main.js' | relative_url }} "></script>
     <script type="text/javascript" src="{{ 'assets/js/lightbox.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/lazy.js' | relative_url }}"></script>
 
 
 

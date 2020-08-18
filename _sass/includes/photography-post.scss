@@ -19,7 +19,7 @@
 
 
 
-.image-img {
+.image-img, .image-img.lazy {
     display: block;
     margin: auto !important;
     object-fit: contain;
@@ -40,7 +40,7 @@
 
 
 @media print, screen and (max-width: 767px) and (min-width: 100px) {
-    .image-img {
+    .image-img, .image-img.lazy {
         max-width: calc(100vw-40px);
         max-height: 260px;
     }
