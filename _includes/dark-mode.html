@@ -1,0 +1,14 @@
+<style>
+    input:checked+.slider {
+        background-image: url("{{ '../../assets/moon-black.svg' | relative_url}}");
+    }
+
+    .slider.round {
+        background-image: url("{{ '../../assets/day-sunny.svg' | relative_url }}");
+    }
+</style>
+
+<label class="theme-switch">
+    <input type="checkbox"/>
+    <div class="slider round"></div>
+</label>

@@ -1,3 +1,10 @@
+<style>
+  input:checked+.slider {background-image: url("{{ '../../assets/moon-black.svg' | relative_url}}");}
+
+  .slider.round {background-image: url("{{ '../../assets/day-sunny.svg' | relative_url }}");}
+
+</style>
+
 <section>
   <p class="footer-note">This website was designed by <a href="https://github.com/conradli">Conrad Li</a></p>
 
@@ -9,22 +16,15 @@
       <li><a target="_blank" href="{{ social.link }}"><i class="{{ social.icon }}"></i></a></li>
       {% endif %}
       {% endfor %}
+
+      {% include dark-mode.html %}
       
-      <label class="theme-switch" for="checkbox2">
-        <input type="checkbox" id="checkbox2" />
-        <div class="slider round"></div>
-      </label>
+
 
 
     </ul>
 
-
-
     {% endif %}
   </div>
-
-
-
-
 
 </section>

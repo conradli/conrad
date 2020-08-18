@@ -1,3 +1,10 @@
+<style>
+  input:checked+.slider {background-image: url("{{ '../../assets/moon-black.svg' | relative_url}}");}
+
+  .slider.round {background-image: url("{{ '../../assets/day-sunny.svg' | relative_url }}");}
+
+</style>
+
 <section>
 
   <!-- Overlay visible for mobile-->
@@ -104,10 +111,9 @@
         <li><a target="_blank" href="{{ social.link }}"><i class="{{ social.icon }}"></i></a></li>
         {% endif %}
         {% endfor %}
-        <label class="theme-switch" for="checkbox">
-          <input type="checkbox" id="checkbox" />
-          <div class="slider round"></div>
-        </label>
+
+        {% include dark-mode.html %}
+
       </ul>
 
       {% endif %}
