@@ -12,6 +12,7 @@
 // Media queries 
 @import './includes/styles.scss';
 @import './includes/medium.scss';
+
 @import './includes/small.scss';
 
 
@@ -24,10 +25,11 @@
 @import './includes/blog.scss';
 @import './includes/post.scss';
 
+
 @import './includes/photography.scss';
 @import './includes/photography-post.scss';
 @import './includes/lightbox.scss';
 
-@import './includes/portfolio.scss';
-
 @import './includes/contact-form.scss';
+//@import './includes/portfolio.scss';
+

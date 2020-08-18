@@ -39,9 +39,9 @@
                 {% assign counter = forloop.index %}
 
                 <li class="image-box">
-                    {% if counter >= 3 %}
+                    {% if counter > 2 %}
                     <a class="image-caption" href="{{ file.image | relative_url }}">
-                        <img class="image-img lazy" src="{{ file.timg | relative_url }}" aria-hidden="true"
+                        <img class="image-img lazy" src="{{ file.timg | relative_url }}" aria-hidden="true" 
                         data-src="{{ file.image | relative_url }}" alt="{{ file.caption }}">
                         <span class="image-caption-placement" aria-hidden="true">{{file.caption}}</span>
                     </a>

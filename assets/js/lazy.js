@@ -1,3 +1,9 @@
+/* Credit: https://css-tricks.com/the-complete-guide-to-lazy-loading-images/
+
+** I modified to remove jQuery -> only JS ** 
+** I assume it works properly but I am not a JS/JQuery expert **
+*/
+
 document.addEventListener("DOMContentLoaded", function() {
     var lazyloadImages;    
     lazyloadImages = document.querySelectorAll(".image-img.lazy");
