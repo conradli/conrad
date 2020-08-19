@@ -13,7 +13,7 @@
     <ul aria-label="Social media icons squares">
       {% for social in site.social_icons %}
       {% if social.icon %}
-      <li><a target="_blank" rel="noreferrer noopener" href="{{ social.link }}" aria-label="Link to {{social.name}} profile"><i class="{{ social.icon }}"></i></a></li>
+      <li><a target="_blank" rel="noreferrer noopener" href="{{ social.link }}" aria-label="Link to {{social.name}}"><i class="{{ social.icon }}"></i></a></li>
       {% endif %}
       {% endfor %}
 
