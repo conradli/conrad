@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Conrad Li">
+  <meta name="Description" content="Photography gallery.">
 
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" media="all" type="text/css">
 
@@ -35,7 +37,8 @@
         <a href="{{ site.url }}{{ photo.url }}">
 
           <div class="photo-item">
-            <img class="photo-display" src="{{ site.baseurl }}{{ photo.display }}">
+            <img class="photo-display" src="{{ site.baseurl }}{{ photo.display }}" 
+            alt="Polaroid image for {{ photo.place }}, {{ photo.country }}">
             <h2 class="photo-title">{{photo.place}}, {{photo.country}}</h2>
             <time class="photo-date">{{ photo.date | date: "%m-%d-%Y" }}</time>
           </div>
