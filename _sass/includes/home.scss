@@ -3,7 +3,8 @@
 }
 
 #about b{
-    color: darken($color: $secondary-color, $amount: 15);
+    color: darken($color: $secondary-color, $amount: 40);
+    filter: brightness(1.4);
     
 }
 

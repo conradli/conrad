@@ -46,8 +46,6 @@
 input:checked+.slider {
   background-color: var(--secondary-color);
   background-repeat: no-repeat;
-  background-image: url("{{ '../../assets/moon-black.svg' | relative_url}}");
-
   background-size: 12px;
   background-position-x: 4px;
   background-position-y: 4px;
@@ -65,7 +63,6 @@ input:checked+.slider:before {
 .slider.round {
   border-radius: 22px;
   background-repeat: no-repeat;
-  background-image: url("{{ '../../assets/day-sunny.svg' | relative_url }}");
   background-size: 14px;
   background-position-x: 23px;
   background-position-y: 4px;

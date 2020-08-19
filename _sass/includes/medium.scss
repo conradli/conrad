@@ -2,7 +2,6 @@
 @media print, screen and (max-width: 1099px) and (min-width: 768px) {
   div.wrapper {
     width: auto;
-    margin: 0 auto;
   }
 
   body {
@@ -21,8 +20,7 @@
     box-shadow: .3rem .3rem 0 var(--inner-box-shadow), .7rem .7rem 0 var(--secondary-color);
     margin-bottom: 1rem; 
 
-    &-top,
-    &-bottom {
+    &-top, &-bottom, &-avatar, &-info, &-subtitle {
       display: none;
     }
 
@@ -34,27 +32,16 @@
     }
 
 
-
-    &-avatar {
-      display: none;
-
-      img {
-        display: none;
-
-      }
-    }
-
-    &-info,
-    &-subtitle {
-      display: none;
-    }
-
-
     &-title-medium {
       display: block;
       width: max-content;
       float: left;
       padding: .35rem 0 .5rem 0em;
+
+      a {
+        text-decoration: none;
+        color: var(--font-color);
+      }
 
     }
 
@@ -67,19 +54,13 @@
       overflow: hidden;
       float: right;
       
-      li {
+      .nav-link {
         padding: 0px !important;
         height: auto;
       }
 
-      /*
-      li:last-child {
-        border-right: none;
-        
-      }
-      */
 
-      a {
+      .nav-link-text {
         font-size: 1.1em;
         font-weight: 500;
         color: var(--font-color) !important;

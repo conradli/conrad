@@ -91,7 +91,6 @@
     right: 0;
     bottom: 0;
     overflow: hidden;
-    overflow-y: hidden;
     transition: .15s;
     
 
@@ -111,31 +110,16 @@
   .overlay-content {
     position: static;
     display: block;
-    width: 100%;
     text-align: center;
-    margin-top: 0px;
-    padding: 0;
-    white-space: nowrap;
     border-top: $layout-header-middle-border;
 
-    ul li {
-        margin-top: 0px;
-        padding: 0px;
+    .nav-link {
         border-bottom: $layout-header-middle-border;
 
-        a {
-            margin-top: 0px;
-            top: 0px;
+        &-text {
             padding: 8px;
-            text-decoration: underline;
             font-size: 1.5rem;
-            display: block;
-            transition: 0.3s;
             font-weight: 400;
-        }
-
-        a:hover, a:focus {
-            color: #f1f1f1;
         }
     }
   }
