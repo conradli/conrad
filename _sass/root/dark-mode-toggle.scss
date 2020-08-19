@@ -4,8 +4,8 @@
   display: inline-block;
   height: 22px;
   position: relative;
-  left: 127px;
-  top: 3px;
+  left: 198px;
+  bottom: 30px;
   width: 40px;
 
 }
@@ -77,4 +77,17 @@ input:checked+.slider:before {
 .slider.round:before {
   border-radius: 50%;
   
+}
+
+
+@media print, screen and (max-width: 1099px) and (min-width: 768px) {
+  .theme-switch {
+    left: -190px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 100px) {
+  .theme-switch {
+    left: 55px;
+  }
 }

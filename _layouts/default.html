@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -87,7 +87,8 @@
         <a href="{{ site.url }}{{ photo.url }}">
 
           <div class="photo-item">
-            <img class="photo-display" src="{{ site.baseurl }}{{ photo.display }}">
+            <img class="photo-display" src="{{ site.baseurl }}{{ photo.display }}"
+            alt="Polaroid image for {{ photo.place }}, {{ photo.country }}">
             <h2 class="photo-title">{{photo.place}}, {{photo.country}}</h2>
             <h3 class="photo-date">{{ photo.date | date: "%m-%d-%Y" }}</h3>
           </div>

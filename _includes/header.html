@@ -100,12 +100,12 @@
         <li><a target="_blank" rel="noreferrer noopener" href="{{ social.link }}"><i class="{{ social.icon }}"></i></a></li>
         {% endif %}
         {% endfor %}
-
-        {% include dark-mode.html %}
-
       </ul>
-
       {% endif %}
+      <label class="theme-switch" for="dark-mode-header">
+        <input type="checkbox" id="dark-mode-header" name="Dark mode toggle"/>
+        <div class="slider round" aria-describedby="dark-mode-header"></div>
+      </label>
 
     </div>
   </div>

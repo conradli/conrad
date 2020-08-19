@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -42,7 +42,7 @@
               </div>
 
               <div class="excerpt">
-                {{ post.excerpt | strip_html | strip_newlines | truncate: 156 }}
+                <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 156 }}</p>
 
               </div>
             </a>
