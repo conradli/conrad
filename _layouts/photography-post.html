@@ -43,12 +43,12 @@
                 <li class="image-box">
                     {% if counter > 2 %}
                     <a class="image-caption" href="{{ file.large | relative_url }}">
-                        <img class="image-img lazy" src="{{ file.timg | relative_url }}" aria-hidden="true" alt="{{ file.caption }}"
-                        srcset="{{ file.xsmall | relative_url }} 450vw,
-                            {{ file.small | relative_url }} 600w,
-                            {{ file.image | relative_url }} 900w"
-                        sizes="(max-width: 480px) 100vw,
-                                40rem">
+                        <img class="image-img lazy" src="{{ file.timg | relative_url }}" aria-hidden="true" alt="{{ file.caption }}" 
+                        srcset="{{ file.xsmall | relative_url }} 450w,
+                                {{ file.small | relative_url }} 600w,
+                                {{ file.image | relative_url }} 900w,
+                                {{ file.image | relative_url }} 1200w" 
+                        sizes="(max-width: 480px) 100vw, 40rem">
                         <span class="image-caption-placement" aria-hidden="true">{{file.caption}}</span>
 
                         <!--
@@ -63,12 +63,12 @@
                     {% else %}
                 
                     <a class="image-caption" href="{{ file.large | relative_url }}">
-                        <img class="image-img" src="{{ file.image | relative_url }}" alt="{{ file.caption }}"
-                        srcset="{{ file.xsmall | relative_url }} 450vw,
-                            {{ file.small | relative_url }} 600w,
-                            {{ file.image | relative_url }} 900w"
-                        sizes="(max-width: 480px) 100vw,
-                            40rem">
+                        <img class="image-img" src="{{ file.image | relative_url }}" alt="{{ file.caption }}" 
+                        srcset="{{ file.xsmall | relative_url }} 450w,
+                                {{ file.small | relative_url }} 600w,
+                                {{ file.image | relative_url }} 900w,
+                                {{ file.image | relative_url }} 1200w"
+                        sizes="(max-width: 480px) 100vw, 40rem">
                         <span class="image-caption-placement" aria-hidden="true">{{file.caption}}</span>
 
                         <!--
