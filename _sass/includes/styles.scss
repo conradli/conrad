@@ -1,5 +1,5 @@
 .wrapper {
-  width: $wrapper-width;
+  width: var(--wrapper-width);
   margin: 0 auto;
 }
 
@@ -79,8 +79,8 @@ a {
   display: block;
   position: fixed;
   top: 3.25em;
-  width: $header-width;
-  height: $header-height;
+  width: var(--header-width);
+  height: var(--header-height);
   -webkit-font-smoothing: subpixel-antialiased;
   background-color: var(--primary-color);
   box-shadow: .27rem .27rem var(--inner-box-shadow), .65rem .65rem 0 var(--secondary-color);
@@ -95,20 +95,20 @@ a {
   }
 
   &-top {
-    height: $layout-header-top-height;
+    height: var(--layout-header-top-height);
     margin-bottom: 5px;
   }
 
   &-middle {
-    top: $layout-header-top-height;
-    height: $layout-header-middle-height;
-    border-top: $layout-header-middle-border;
-    border-bottom: $layout-header-middle-border;
+    top: var(--layout-header-top-height);
+    height: var(--layout-header-middle-height);
+    border-top: var(--layout-header-middle-border);
+    border-bottom: var(--layout-header-middle-border);
     margin-bottom: 10px;
   }
 
   &-bottom {
-    height: $layout-header-bottom-height;
+    height: var(--layout-header-bottom-height);
   }
 
   &-avatar {
@@ -149,7 +149,7 @@ a {
 
   &-menu {
     list-style: none;
-    height: $layout-header-middle-height;
+    height: var(--layout-header-middle-height);
     padding-left: 0px;
     margin: 10px 0; 
 
@@ -228,8 +228,8 @@ a {
 
 .layout-content {
   margin-top: 2rem;
-  width: $section-width;
-  min-height: $section-height;
+  width: var(--section-width);
+  min-height: var(--section-height);
   float: right;
   padding-bottom: 20px;
   overflow: hidden;
@@ -243,7 +243,7 @@ a {
   }
 
   .page-header {
-    border-bottom: $layout-header-middle-border;
+    border-bottom: var(--layout-header-middle-border);
     h1 {
         margin-bottom: 0em;
 
@@ -265,7 +265,7 @@ a {
   float: right;
   clear: both;
   height: 50px;
-  width: $section-width;
+  width: var(--section-width);
   background-color: var(--bg-color);
   font-size: .75rem;
   text-align: right;

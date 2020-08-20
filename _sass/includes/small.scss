@@ -112,10 +112,10 @@
     position: static;
     display: block;
     text-align: center;
-    border-top: $layout-header-middle-border;
+    border-top: var(--layout-header-middle-border);
 
     .nav-link {
-        border-bottom: $layout-header-middle-border;
+        border-bottom: var(--layout-header-middle-border);
 
         &-text {
             padding: 8px;

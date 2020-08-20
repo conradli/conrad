@@ -1,26 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="{{site.default_theme}}">
 
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv="Content-Type" content="chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Conrad Li">
+  {% include head.html %}
+
   <meta name="Description" content="Resume">
-
-    <link rel="stylesheet" href="{{ '/assets/css/main.css?v=' | relative_url }}" media="all" type="text/css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" media="all"
-    type="text/css">
-
 
   {% seo %}
 </head>
 
-
 <body>
-
-
     <div class="wrapper">
       <section class="layout-header">
         {% include header.html %}
@@ -29,14 +18,11 @@
       <section class="layout-content" id="resume-section">
         <header class="page-header">
           <h1 id="resume">Resume</h1>
-
           <a href="{{ '/assets/resume.pdf' | relative_url }}" target="_blank" rel="noreferrer noopener" class="download-section">
             <i id="download-resume-icon" class="fas fa-download"></i>
             <p id="download-resume" class="download-resume">Download</p>
-
           </a>
         </header>
-
 
 
         {% if site.resume_section_education %}

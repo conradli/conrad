@@ -24,9 +24,8 @@ img[data-sizes="auto"] { display: block; }
     margin: auto !important;
     object-fit: contain;
     width: 100%;
-    max-width: $section-width;
+    max-width: var(--section-width);
     max-height: 430px;
-    background-color: rgba($color: black, $alpha: .9);
 }
 
 
@@ -34,8 +33,6 @@ img[data-sizes="auto"] { display: block; }
     display: block;
     padding: .25rem 0 1.5rem 0;
     line-height: 1;
-
-
 }
 
 
@@ -44,5 +41,4 @@ img[data-sizes="auto"] { display: block; }
         max-width: calc(100vw-40px);
         max-height: 260px;
     }
-
 }

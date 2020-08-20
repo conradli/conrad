@@ -1,8 +1,6 @@
 <style>
   input:checked+.slider {background-image: url("{{ '../../assets/moon-black.svg' | relative_url}}");}
-
   .slider.round {background-image: url("{{ '../../assets/day-sunny.svg' | relative_url }}");}
-
 </style>
 
 <section>
@@ -16,13 +14,11 @@
       <li><a target="_blank" rel="noreferrer noopener" href="{{ social.link }}" aria-label="Link to {{social.name}}"><i class="{{ social.icon }}"></i></a></li>
       {% endif %}
       {% endfor %}
-
     </ul>
-
     {% endif %}
 
     <label class="theme-switch" for="dark-mode-footer">
-      <input type="checkbox" id="dark-mode-footer" name="Dark mode toggle"/>
+      <input type="checkbox" id="dark-mode-footer" name="Dark mode toggle" />
       <div class="slider round" aria-describedby="dark-mode-footer"></div>
     </label>
   </div>

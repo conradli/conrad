@@ -1,14 +1,11 @@
 <style>
   input:checked+.slider {background-image: url("{{ '../../assets/moon-black.svg' | relative_url}}");}
-  
   .slider.round {background-image: url("{{ '../../assets/day-sunny.svg' | relative_url }}");}
 </style>
 
 <section>
-
   <!-- Overlay visible for mobile-->
   <div id="myNav" class="overlay" aria-label="Navigation menu">
-
     <!-- The overlay -->
     <div class="overlay-top">
       <span onclick="closeNav()" aria-label="Close navigation menu">
@@ -17,7 +14,6 @@
     </div>
 
     <div class="overlay-inner">
-      <!-- Overlay content -->
       <div class="overlay-content">
         <ul class="layout-header-menu">
           {% for menu in site.menu %}
@@ -27,19 +23,13 @@
           {% endfor %}
         </ul>
       </div>
-
     </div>
-
-
   </div>
-
 
   <span class="toggle-menu" onclick="openNav()" aria-label="Open navigation menu">
     <i id="openNav" class="fa fa-bars active"></i>
   </span>
-
   <!-- End overlay layout -->
-
 
 
 
@@ -66,7 +56,6 @@
   </div>
 
 
-
   <div class="layout-header-middle">
     <!-- Name in top left, Tablet design -->
     <h1 class="layout-header-title-medium">
@@ -80,17 +69,13 @@
       <li name="{{ menu.link }}" data-menu-link="{{ menu.link }}" class="nav-link active">
         <a class="nav-link-text" href="{{ menu.link | relative_url }}">{{ menu.text }}</a>
       </li>
-
       {% else %}
-
       <li name="{{ menu.link }}" data-menu-link="{{ menu.link }}" class="nav-link">
         <a class="nav-link-text" href="{{ menu.link | relative_url }}">{{ menu.text }}</a>
       </li>
       {% endif %}
       {% endfor %}
     </ul>
-
-
   </div>
 
 
@@ -109,11 +94,10 @@
       </ul>
       {% endif %}
       <label class="theme-switch" for="dark-mode-header">
-        <input type="checkbox" id="dark-mode-header" name="Dark mode toggle"/>
+        <input type="checkbox" id="dark-mode-header" name="Dark mode toggle" {{site.checked}} />
         <div class="slider round" aria-describedby="dark-mode-header"></div>
       </label>
-
     </div>
   </div>
-
+  
 </section>

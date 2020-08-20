@@ -1,7 +1,11 @@
 title: Conrad Li
 subtitle: Bowdoin CS Student
 description: 
-favicon: 
+avatar: "./assets/photography/brussels/xsmall/BEL_012-xs.jpg"
+favicon:
+
+default_theme: "dark"
+checked: checked
 
 about: 
   "I am a <b>senior majoring in Computer Science</b> and minoring in Economics at Bowdoin College. I am interested in the intersection between tech and education, specifically providing opportunities for first-gen college students like myself. 
@@ -12,12 +16,7 @@ about:
 
   <br><br>
   
-  <b>I will graduate in May 2021 and I am interested in full-time job opportunities.</b> I have experience with Python, Java, Kotlin, and HTML/CSS/JS, machine learning models, agile development, and a willingness to learn. 
-
-  <br><br>
-  <b>Reach me at zhikangli@hotmail.com. I'd love to chat!</b>
-
-  "
+  <b>I will graduate in May 2021 and I am interested in full-time job opportunities.</b> I have experience with Python, Java, Kotlin, and HTML/CSS/JS, machine learning models, agile development, and a willingness to learn."
 
 defaults:
   -
