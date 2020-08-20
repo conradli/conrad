@@ -37,12 +37,22 @@ $layout-header-middle-border: 1px solid var(--font-color);
 
 $secondary-color: #A8D0E6;
 
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto');
+    font-display: swap;
+}
+
+
 :root {
+    --font-family: 'Open Sans', sans-serif;
     --primary-color: #fafafa;
     --secondary-color: #A8D0E6;
     --inner-box-shadow: black;
     --font-color: #333;
-    --font-color-hover: green;
+    --font-color-hover: #9c9c9c;
 
     --bg-color: rgb(245, 245, 245);
 
@@ -55,9 +65,11 @@ $secondary-color: #A8D0E6;
 
     --photo-border-color: black;
     --photo-bg-color: white;
+
 }
 
 [data-theme="dark"] {
+    --font-family: 'Open Sans', sans-serif;
     --primary-color: #39393f;
     --secondary-color: #74b9ff;
     --inner-box-shadow: #e4e4e4;
@@ -71,6 +83,7 @@ $secondary-color: #A8D0E6;
     --social-icon-color-hover: #f9f9f9;
     
     --border-color: #ccc;
+
 
     h1, h2, h3, h4, h5, h6, p, input, textarea {
         filter: brightness(0.85) contrast(1.1);

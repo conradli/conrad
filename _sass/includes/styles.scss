@@ -34,7 +34,7 @@ body {
 body {
   @include sans;
   background-color: var(--bg-color);
-  font: 16px/1.5 $main-font-family;
+  font: 16px/1.5 var(--font-family);
   color: var(--font-color);
 }
 
@@ -137,6 +137,7 @@ a {
   }
 
   &-title {
+    display: inline-block;
     white-space: nowrap;
   }
 

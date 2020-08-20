@@ -95,13 +95,13 @@
   .resume-item-summary,
   .resume-item-list {
     a {
-      color: #333;
+      color: var(--font-color);
       text-decoration: none;
       border-bottom: 1px solid;
 
       &:hover {
         border-bottom: none;
-        color: #9c9c9c;
+        color: var(--font-color-hover);
       }
     }
   }

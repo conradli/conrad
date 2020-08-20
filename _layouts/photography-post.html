@@ -8,6 +8,7 @@
     <meta name="author" content="Conrad Li">
     <meta name="Description" content="Photography taken in {{ page.place }}, {{ page.country }} on {{ page.date | date: '%B %-d, %Y' }}">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" media="all" type="text/css">
 
 
@@ -39,21 +40,20 @@
                 <li class="image-box">
 
                     <a class="image-caption" href="{{ file.large | relative_url }}">
-
                         <picture>
-                            <source srcset="{{ file.xlarge | relative_url }}" media="(min-width: 1600px)">
-                            <source srcset="{{ file.large | relative_url }}" media="(min-width: 1099px)">
+                            <source srcset="{{ file.large | relative_url }}" media="(min-width: 1200px)">
                             <source srcset="{{ file.image | relative_url }}" media="(min-width: 768px)">
-                            <source srcset="{{ file.small | relative_url }}" media="(min-width: 320px)"> 
+                            <source srcset="{{ file.small | relative_url }}" media="(min-width: 481px)"> 
 
                             <img class="image-img lazyload" alt="{{ file.caption }}"
                             src="{{ file.timg | relative_url }}" data-src="{{ file.xsmall | relative_url }}">
                         </picture>
 
-                        <noscript>
-                            <img src="{{ file.image | relative_url }}" alt="{{ file.caption }}">
-                        </noscript>
+                        <span class="image-caption-placement" aria-hidden="true">{{ file.caption }}</span>
+
                     </a>
+
+
                     
                 </li>
 
@@ -75,7 +75,7 @@
 
     <!-- Scripts go below here -->
     <script type="text/javascript" src="{{ '/assets/js/main.js' | relative_url }} "></script>
-    <script type="text/javascript" src="{{ 'assets/js/lightbox.js' | relative_url }}"></script>
+    <script defer type="text/javascript" src="{{ 'assets/js/lightbox.js' | relative_url }}"></script>
     <script type="text/javascript" src="{{ 'assets/js/lazysizes.min.js' | relative_url }}"></script>
 
 
