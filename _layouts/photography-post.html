@@ -8,7 +8,6 @@
     <meta name="author" content="Conrad Li">
     <meta name="Description" content="Photography taken in {{ page.place }}, {{ page.country }} on {{ page.date | date: '%B %-d, %Y' }}">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" media="all" type="text/css">
 
 
@@ -43,7 +42,7 @@
                         <picture>
                             <source srcset="{{ file.large | relative_url }}" media="(min-width: 1200px)">
                             <source srcset="{{ file.image | relative_url }}" media="(min-width: 768px)">
-                            <source srcset="{{ file.small | relative_url }}" media="(min-width: 481px)"> 
+                            <source srcset="{{ file.small | relative_url }}" media="(min-width: 500px)"> 
 
                             <img class="image-img lazyload" alt="{{ file.caption }}"
                             src="{{ file.timg | relative_url }}" data-src="{{ file.xsmall | relative_url }}">
