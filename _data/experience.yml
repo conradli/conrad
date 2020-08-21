@@ -1,4 +1,10 @@
 # Jobs
+- company: Bank of America
+  position: Global Technology Analyst
+  location:
+  duration: June 2020 &mdash; August 2020
+  summary: <ul class="resume-item-list"><li>Achieved a 5.45% mean absolute percentage error (MAPE) on time series prediction model for daily ATM total cash volume estimations, beating the former benchmark by 42%, and delivered the top three performing models out of all intern groups.</li><li>Collaborated with eight other interns through daily team meetings.</li><li>Researched and implemented Random Forest Regressor and Voting Regressor to achieve 8% and 6.8% MAPE, respectively.</li><li>Evaluated findings and presented novel, evidence-based hypotheses to senior leadership about ways to further improve models.</li></ul>
+
 - company: Rochester Institute of Technology
   position: NSF REU Software Engineer Research Fellow
   location: 

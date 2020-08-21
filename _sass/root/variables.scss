@@ -16,7 +16,6 @@ $main-font-family: $sans-font;
 $grid-gutter: 10px !default;
 
 
-
 @font-face {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -73,10 +72,12 @@ $grid-gutter: 10px !default;
         background-color: rgba($color: black, $alpha: .4);
     }
 }
+
 [data-theme="light"] {
     --font-family: 'Open Sans', sans-serif;
     --primary-color: #fafafa;
     --secondary-color: #A8D0E6;
+    --secondary-color-filter: brightness(.8) contrast(1.2) opacity(15);
     --inner-box-shadow: black;
     --font-color: #333;
     --font-color-hover: #9c9c9c;

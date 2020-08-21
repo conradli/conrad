@@ -1,5 +1,16 @@
+.post {
+    h2, a {
+        color: var(--secondary-color);
+        filter: var(--secondary-color-filter);
+    }
+    
+}
+
+
 .post-title {
     margin-bottom: 0 !important;
+    color: var(--secondary-color);
+    filter: var(--secondary-color-filter);
 }
 
 
