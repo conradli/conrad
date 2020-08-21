@@ -56,6 +56,7 @@ if (currentTheme) {
     if (currentTheme === 'dark') {
       toggleSwitch[0].checked = true;
       toggleSwitch[1].checked = true;
+
     }
 }
 

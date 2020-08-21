@@ -5,7 +5,6 @@ avatar:
 favicon:
 
 default_theme: "dark"
-checked: checked
 
 about: 
   "I am a <b>senior majoring in Computer Science</b> and minoring in Economics at Bowdoin College. I am interested in the intersection between tech and education, specifically providing opportunities for first-gen college students like myself. 
@@ -87,37 +86,19 @@ social_icons:
     icon: fab fa-github-square
 
 
-# plugin 
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-paginate
 
-# sass 
-sass:
-  sass_dir: _sass
-  style: compressed
-
-markdown: kramdown
 
 
 ###########################
 ##### Resume settings #####
 ###########################
-resume_avatar:                  "true"
 resume_name:                    "Conrad Li"
 resume_title:                   ""
-
-# used for the contact button in _layouts/resume.html
 resume_contact_email:           "zhikangli@hotmail.com"
-
-# the next two items are used for schema itemprops in _layouts/resume.html
 resume_contact_telephone:       ""
 resume_contact_address:         "638 Smith Union, Brunswick, ME 04011"
-
 resume_header_contact_info:     "638 Smith Union, Brunswick, ME 04011 • zhikangli@hotmail.com"
 display_header_contact_info:    "false"
-
 
 
 
@@ -145,3 +126,17 @@ resume_social_links:
   resume_website_url:            "https://conradli.github.io/conradli"
   #resume_medium_url:
 resume_print_social_links:       true
+
+
+# plugin 
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# sass 
+sass:
+  sass_dir: _sass
+  style: compressed
+
+markdown: kramdown
