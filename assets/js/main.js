@@ -48,7 +48,7 @@ Credit: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-vari
 ------------------------------------------------------- */
 
 const toggleSwitch = document.querySelectorAll('.theme-switch input[type="checkbox"]');
-const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'dark';
 
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
