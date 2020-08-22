@@ -2,25 +2,27 @@
 // Resume header bar
 #resume {
   display: inline-block;
-  
+  margin-bottom: 0;
 }
 
 #download-resume, #download-resume-icon {
-  font-size: 24px;
   float: right;
+  font-size: 24px;
   color: var(--secondary-color);//rgba(182, 180, 179, 0.8);
   margin: 2rem 0 0 0 !important;
-
 }
-
 
 #download-resume {
   padding-right: 0.25rem;
+  line-height: 1.5;
+}
+
+#download-resume-icon {
+  line-height: 1.2;
 }
 
 
 .download-section:hover {
-
   #download-resume,
   .fas.fa-download,
   #download-resume-icon {

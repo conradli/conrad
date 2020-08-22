@@ -43,18 +43,21 @@ $grid-gutter: 10px !default;
     --primary-color: #39393f;
     --secondary-color: #74b9ff;
     --inner-box-shadow: #e4e4e4;
+    --highlight-nav-color: rgb(65, 64, 64);
 
+    --header-color: var(--secondary-color);
     --font-color: #e5e5e5;
-    --font-color-hover: #e4e4e4;
     --bg-color: #2e2e33;
 
-    --highlight-nav-color: rgb(65, 64, 64);
     --social-icon-color: rgb(180, 180, 180);
     --social-icon-color-hover: #f9f9f9;
+    
     --blogpost-color-hover: rgba(65,64,64, .45);
     --hyperlink-color-hover: white;
 
     --border-color: #74baff71;
+    --border-bottom-color: #74baff71;
+
     --photo-border-color: black;
     --photo-bg-color: white;
 
@@ -75,18 +78,20 @@ $grid-gutter: 10px !default;
     --primary-color: #fafafa;
     --secondary-color: #f28482; //#f28482 // #ef476f #82c0cc
     --inner-box-shadow: rgba(0, 0, 0, 0.74);
-    --font-color: #333;
-    --font-color-hover: #9c9c9c;
+    --highlight-nav-color: rgb(224,224,224);
 
+    --header-color: var(--secondary-color);
+    --font-color: #333;
     --bg-color: rgb(245, 245, 245);
 
-    --highlight-nav-color: rgb(224,224,224);
     
     --social-icon-color: rgb(8, 8, 8);
     --social-icon-color-hover: rgb(180, 180, 180);
     --blogpost-color-hover: rgba(234, 234, 234, 0.45);
     --hyperlink-color-hover: black;
+
     --border-color: #f284825b;
+    --border-bottom-color: #f284825b;
 
 
     --photo-border-color: black;
