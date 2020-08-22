@@ -24,7 +24,7 @@
   #download-resume,
   .fas.fa-download,
   #download-resume-icon {
-    color: #9c9c9c;
+    color: var(--hyperlink-color-hover);
     text-decoration: none;
   }
   
@@ -38,6 +38,7 @@
   margin-bottom: 1rem;
 
   h2 {
+    font-size: 1.75rem;
     font-weight: 700;
     letter-spacing: -.05rem;
     margin: 0;
@@ -80,6 +81,7 @@
   }
 
   .resume-item-details {
+    color: var(--font-color);
     font-size: 1.125rem;
     margin: 0 0 0.5rem;
     line-height: 1;
@@ -95,13 +97,13 @@
   .resume-item-summary,
   .resume-item-list {
     a {
-      color: var(--font-color);
+      color: var(--secondary-color);
       text-decoration: none;
       border-bottom: 1px solid;
 
       &:hover {
         border-bottom: none;
-        color: var(--font-color-hover);
+        color: var(--hyperlink-color-hover);
       }
     }
   }

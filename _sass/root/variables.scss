@@ -7,11 +7,6 @@ $font-times: "Times New Roman", Times, serif;
 $font-georgia: "Georgia", serif;
 $font-palatino: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
-// Selected font style
-$sans-font: $font-apple-system;
-$serif-font: $font-times; 
-
-$main-font-family: $sans-font;
 // resume variables 
 $grid-gutter: 10px !default;
 
@@ -39,10 +34,12 @@ $grid-gutter: 10px !default;
 
     --layout-header-middle-border: 1px solid var(--font-color);
 
+    --sans-font: 'Open Sans', sans-serif;
+    --serif-font: "Times New Roman", Times, serif;
+    --font-family: 'Open Sans', sans-serif;
 }
 
 [data-theme="dark"] {
-    --font-family: 'Open Sans', sans-serif;
     --primary-color: #39393f;
     --secondary-color: #74b9ff;
     --inner-box-shadow: #e4e4e4;
@@ -54,9 +51,10 @@ $grid-gutter: 10px !default;
     --highlight-nav-color: rgb(65, 64, 64);
     --social-icon-color: rgb(180, 180, 180);
     --social-icon-color-hover: #f9f9f9;
-    
-    --border-color: #ccc;
+    --blogpost-color-hover: rgba(65,64,64, .45);
+    --hyperlink-color-hover: white;
 
+    --border-color: #74baff71;
     --photo-border-color: black;
     --photo-bg-color: white;
 
@@ -74,21 +72,21 @@ $grid-gutter: 10px !default;
 }
 
 [data-theme="light"] {
-    --font-family: 'Open Sans', sans-serif;
     --primary-color: #fafafa;
-    --secondary-color: #A8D0E6;
-    --secondary-color-filter: brightness(.8) contrast(1.2) opacity(15);
-    --inner-box-shadow: black;
+    --secondary-color: #f28482; //#f28482 // #ef476f #82c0cc
+    --inner-box-shadow: rgba(0, 0, 0, 0.74);
     --font-color: #333;
     --font-color-hover: #9c9c9c;
 
     --bg-color: rgb(245, 245, 245);
 
     --highlight-nav-color: rgb(224,224,224);
+    
     --social-icon-color: rgb(8, 8, 8);
     --social-icon-color-hover: rgb(180, 180, 180);
-
-    --border-color: #ccc;
+    --blogpost-color-hover: rgba(234, 234, 234, 0.45);
+    --hyperlink-color-hover: black;
+    --border-color: #f284825b;
 
 
     --photo-border-color: black;

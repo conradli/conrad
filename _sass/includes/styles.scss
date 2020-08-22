@@ -12,7 +12,6 @@
 
 }
 
-
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -32,12 +31,14 @@ body {
 
 
 body {
-  @include sans;
   background-color: var(--bg-color);
   font: 16px/1.5 var(--font-family);
   color: var(--font-color);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: var(--secondary-color);
+}
 
 h1 {font-size: 2rem;}
 h2 {font-size: 1.5rem;}
@@ -139,10 +140,12 @@ a {
   &-title {
     display: inline-block;
     white-space: nowrap;
+    
   }
 
 
   &-subtitle {
+    color: var(--font-color);
     font-weight: 200;
     margin-bottom: 10px;
   }
@@ -167,24 +170,22 @@ a {
       &-text {
         display: block;
         padding: 10px 10px 10px 40px;
-        color: var(--font-color) !important;
+        color: var(--font-color);
         text-decoration: none !important;
         font-weight: 500;
       }
-
-      
-      &:hover {
-        color: var(--font-color-hover) !important;
-      }
-
-
     }
     
     .active {
       background-color: var(--secondary-color);
       border-radius: .5em;
-      text-decoration: underline;
+      text-decoration: none;
+
+      .nav-link-text {
+        color: black !important;
+      }
     }
+
   }
 
   &-small {

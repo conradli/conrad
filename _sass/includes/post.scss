@@ -1,16 +1,20 @@
 .post {
     h2, a {
         color: var(--secondary-color);
-        filter: var(--secondary-color-filter);
     }
-    
+    a {
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: var(--font-color-hover);
+    }
 }
 
 
 .post-title {
     margin-bottom: 0 !important;
     color: var(--secondary-color);
-    filter: var(--secondary-color-filter);
 }
 
 

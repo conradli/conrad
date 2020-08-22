@@ -4,13 +4,12 @@
 
 #about b{
     color: var(--secondary-color);
-    filter: var(--secondary-color-filter);
 }
 
 
 .latest-post-header {
     display: block;
-    border-top: 3px double var(--border-color);
+    border-top: 4px double var(--border-color);
     border-bottom: 2px solid var(--border-color);
     margin-top: 2rem !important;
 }
