@@ -2,13 +2,10 @@
 @media print, screen and (max-width: 1099px) and (min-width: 768px) {
   div.wrapper {
     width: auto;
-  }
-
-  body {
-    width: 100%;
-    height: 100%;
     padding: 30px;
   }
+
+
 
   .layout-header {
     position: static;
