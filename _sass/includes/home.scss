@@ -13,3 +13,27 @@
     border-bottom: 1px solid var(--border-bottom-color);
     margin-top: 2rem !important;
 }
+
+.see-all-btn{
+    float: right;
+    margin: 1rem ;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--bg-color);
+    border-radius: .5rem;
+    h3 {
+        padding: 0 .7rem;
+        margin: .5rem;
+        color: var(--font-color);
+
+    }
+}
+
+
+.see-all-btn:hover {
+    background-color: var(--secondary-color);
+    h3 {
+        color: black;
+    }
+
+}
+

@@ -53,8 +53,8 @@
         {% if postNum > 3 %}
         <div>
           <a href="{{ '/blog/' | relative_url }}" style="display:block;">
-            <button class="see-all-blog">
-              <h3>See More Posts →</h3>
+            <button class="see-all-btn">
+              <h3>More →</h3>
             </button>
           </a>
         </div>
@@ -86,8 +86,8 @@
       {% assign postNum = site.photography | size %}
       {% if postNum > 2 %}
       <a href="{{ '/photography/' | relative_url }}">
-        <button class="see-all-blog">
-          <h3>See More Posts</h3>
+        <button class="see-all-btn">
+          <h3>More →</h3>
         </button>
       </a>
       {% endif %}

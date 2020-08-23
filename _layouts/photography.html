@@ -21,7 +21,7 @@
     <div class="layout-content">
 
       <h1 class="page-header">Photography</h1>
-      {% assign photography = site.photography | sort: 'title' %}
+      {% assign photography = site.photography | sort: 'date' | reverse %}
 
       <div class="photo-grid">
         {% for photo in photography %}

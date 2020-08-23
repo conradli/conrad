@@ -70,24 +70,6 @@
     }
 }
 
-.see-all-blog {
-    float: right;
-    border: 1px solid rgb(204, 204, 204);
-    background-color: var(--bg-color);
-
-    h3 {
-        margin: .5em;
-    }
-}
-
-
-.see-all-blog:hover {
-    background-color: var(--blogpost-color-hover);
-    box-shadow: .3rem .35rem var(--secondary-color);
-    transform: translate3d(-2px,-2px, 0);
-}
-
-
 
 @media print, screen and (max-width: 767px) and (min-width: 100px) {
     .blog {
