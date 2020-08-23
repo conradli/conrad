@@ -66,8 +66,8 @@
       <h1 class="latest-post-header">Photography</h1>
 
       <section class="photo-grid">
-
-        {% for photo in site.photography limit:2 %}
+        {% assign photography = site.photography | sort: 'date' | reverse %}
+        {% for photo in photography limit:2 %}
 
         <a href="{{ site.url }}{{ photo.url }}">
 
