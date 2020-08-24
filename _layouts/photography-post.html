@@ -26,17 +26,13 @@
             {% if page.carousel %}
             <ul class="image-gallery" id="image-gallery">
                 {% for file in page.carousel %}
-
                 <li class="image-box">
 
                     <a class="image-caption" href="{{ file.large | relative_url }}">
                         <picture>
-                            <source srcset="{{ file.large | relative_url }}" media="(min-width: 1300px)">
-                            <source srcset="{{ file.image | relative_url }}" media="(min-width: 768px)">
-                            <source srcset="{{ file.small | relative_url }}" media="(min-width: 500px)"> 
-
+                            <source data-srcset="{{ file.image | relative_url }}" media="(min-width: 768px)">
                             <img class="image-img lazyload" alt="{{ file.caption }}"
-                            src="{{ file.timg | relative_url }}" data-src="{{ file.xsmall | relative_url }}">
+                            src="{{ file.timg | relative_url }}" data-src="{{ file.small | relative_url }}">
                         </picture>
 
                         <span class="image-caption-placement" aria-hidden="true">{{ file.caption }}</span>
