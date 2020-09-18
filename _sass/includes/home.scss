@@ -18,21 +18,21 @@
     float: right;
     margin: 1rem ;
     border: 1px solid var(--secondary-color);
-    background-color: var(--bg-color);
+    background-color: var(--secondary-color);
     border-radius: .8rem;
     h3 {
         padding: 0 .7rem;
         margin: .5rem;
-        color: var(--font-color);
+        color: black;
 
     }
 }
 
 
 .see-all-btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--bg-color);
     h3 {
-        color: black;
+        color: var(--font-color);
     }
 
 }
